@@ -1,0 +1,93 @@
+/* ==========================================================================
+   Team list shortcode responsive style - begin
+   ========================================================================== */
+
+@include laptop-landscape {
+	
+	.eltdf-team-list-holder {
+
+        $gallery_columns_number: ('four', 'five');
+
+        @for $i from 0 to length($gallery_columns_number) {
+            &.eltdf-tl-#{nth($gallery_columns_number,$i+1)}-columns {
+                $gallery_item_size: 100% / 3;
+
+                .eltdf-team {
+                    width: $gallery_item_size;
+                }
+
+                @media only screen and (min-width: $ipad-landscape-plus-pixel) {
+
+                    .eltdf-team {
+
+                        &:nth-child(3n+1) {
+                            clear: both;
+                        }
+                    }
+                }
+            }
+        }
+	}
+}
+
+@include ipad-landscape {
+	
+	.eltdf-team-list-holder {
+
+        $gallery_columns_number: ('four', 'five');
+
+        @for $i from 0 to length($gallery_columns_number) {
+            &.eltdf-tl-#{nth($gallery_columns_number,$i+1)}-columns {
+
+                .eltdf-team {
+                    width: 50%;
+                }
+
+                @media only screen and (min-width: $phone-landscape-plus-pixel) {
+
+                    .eltdf-team {
+
+                        &:nth-child(2n+1) {
+                            clear: both;
+                        }
+                    }
+                }
+            }
+        }
+	}
+}
+
+@include ipad-portrait {
+
+	.eltdf-team-list-holder {
+
+        $gallery_columns_number: ('three');
+
+        @for $i from 0 to length($gallery_columns_number) {
+            &.eltdf-tl-#{nth($gallery_columns_number,$i+1)}-columns {
+
+                .eltdf-team {
+                    width: 100%;
+
+					.eltdf-team-info{
+						margin-bottom: 25px;
+					}
+                }
+            }
+        }
+	}
+}
+
+@include phone-landscape {
+	
+	.eltdf-team-list-holder .eltdf-tl-inner .eltdf-team {
+		width: 100%;
+		
+		.eltdf-team-info{
+			margin-bottom: 25px;
+		}
+	}
+}
+/* ==========================================================================
+   Team list shortcode responsive style - end
+   ========================================================================== */

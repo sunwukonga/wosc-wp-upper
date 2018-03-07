@@ -1,0 +1,221 @@
+/* ==========================================================================
+   Testimonials split style - begin
+   ========================================================================== */
+.eltdf-testimonials-holder {
+    
+    &.eltdf-testimonials-split {
+
+    	.eltdf-testimonials{
+    		padding: 0;
+    	}
+
+        .eltdf-testimonials-content-holder-outer {
+            position: absolute;
+            height: 100%;
+            width: 50%;
+            top:0;
+            right: 0;
+
+    		.eltdf-testimonials-content-holder{
+    			display: table;
+                position: relative;
+                height: 100%;
+    			width: 80%;
+                table-layout: fixed;
+                z-index: 100;
+    			overflow: hidden;
+
+               .owl-item {
+                    opacity: 0;
+                    @include eltdfTransform(scale(.7));
+
+                    &.active {
+                        opacity: 1;
+                        @include eltdfTransform(scale(1));
+                        @include eltdfTransition(all .4s .1s);
+
+                    }
+                }
+
+                .eltdf-testimonials-content-holder-inner {
+                    display: table-cell;
+                    vertical-align: middle;
+                }
+    		}
+        }
+
+        .eltdf-testimonials-images-holder {
+            width: 46%;
+            display: inline-block;
+            vertical-align: middle;
+
+            img {
+                display: block;
+            }
+        }
+
+    	.eltdf-testimonial-angled-bckg-holder{
+			position: absolute;
+			top: 0;
+			left: -25%;
+			width: 150%;
+			height: 100%;
+            z-index: 2;
+			@include eltdfTransform(skew(-25deg));
+			overflow: hidden;
+
+            .eltdf-testimonial-angled-bckg-image{
+                position: absolute;
+                top: 0;
+                left: -25%;
+                width: 150%;
+                height: 100%;
+                z-index: -1;
+                background-position: 50% 50%;
+                background-size: cover;
+                background-repeat: no-repeat;
+                @include eltdfTransform(skew(25deg));
+            }
+    	}
+
+        .eltdf-testimonial-author {
+        	color: #fff;
+            margin: 30px 0 0;
+        }
+
+        .eltdf-testimonial-text {
+            color: #fff;
+            line-height: 1.4em;
+            margin: 0;
+        }
+
+        .owl-item {
+            @include eltdfTransform(translateZ(0));
+        }
+
+        .owl-nav{
+        	position: absolute;
+        	bottom: 0;
+        	right: 0;
+            z-index: 200;
+
+        	.owl-prev,
+        	.owl-next{
+        		position: relative;
+        		display: inline-block;
+        		vertical-align: top;
+        		margin: 0 1px;
+        		@include eltdfTransform(translateY(0));
+        	}
+
+        	.owl-prev{
+        		left: 0;
+        	}
+
+        	.owl-next{
+        		right: 0;
+        	}
+
+        	.eltdf-next-icon .eltdf-icon-arrow,
+        	.eltdf-prev-icon .eltdf-icon-arrow{
+        		width: 63px;
+        		height: 63px;
+        		line-height: 63px;
+        		color: #fff;
+        		font-size: 20px;
+        		text-align: center;
+        		background-color: rgba(241,241,241,0.1);
+                overflow: hidden;
+
+                &:before {
+                    @include eltdfTransition(all .2s);
+                }
+        	}
+
+            .eltdf-prev-number, 
+            .eltdf-next-number {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                color: #fff;
+                font-size: 22px;
+                font-weight: 600;
+                line-height: 1.2em;
+                @include eltdfTransform(translate(-50%,-50%));
+                opacity: 0;
+                @include eltdfTransition(opacity .2s);
+            }
+
+            .eltdf-prev-icon:hover > span:first-child:before {
+                @include eltdfTransform(translateX(-15px));
+                opacity: 0;
+            } 
+
+            .eltdf-next-icon:hover > span:first-child:before {
+                @include eltdfTransform(translateX(15px));
+                opacity: 0;
+            }
+
+            .eltdf-prev-icon:hover .eltdf-prev-number, 
+            .eltdf-next-icon:hover .eltdf-next-number {
+                opacity: 1;
+            }
+        }
+
+        .owl-dots {
+        	position: absolute;
+            top: 50%;
+            left: calc(100% - 40px);
+            width: 20px;
+        	z-index: 5;
+        	@include eltdfTransform(translateY(-50%));
+        }
+
+        /* Light/Dark styles */
+        &.eltdf-testimonials-dark {
+            
+            .eltdf-testimonial-text,
+            .eltdf-testimonial-author {
+                color: #333;
+            }
+
+            .eltdf-testimonial-text-holder .eltdf-testimonial-angled-bckg{
+            	background-color: $shortcode-background-color;
+            }
+
+            .owl-nav .eltdf-next-icon,
+            .owl-nav .eltdf-prev-icon{
+	            .eltdf-icon-arrow{
+	            	color: #333;
+	            	background-color: #fff;
+	            }
+	        }
+        }
+
+        &.eltdf-testimonials-light {
+
+            .owl-dots {
+                
+                .owl-dot {
+                    
+                    span {
+                        border: 2px solid rgba(#fff, .5);
+                        background-color: #fff;
+                    }
+                    
+                    &:hover,
+                    &.active {
+
+                        span {
+                            border-color: #fff;
+                        }
+                    }
+                }
+            }
+    	}
+    }
+}
+/* ==========================================================================
+   Testimonials split style - end
+   ========================================================================== */
+

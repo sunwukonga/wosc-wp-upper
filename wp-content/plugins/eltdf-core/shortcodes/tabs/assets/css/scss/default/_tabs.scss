@@ -1,0 +1,158 @@
+/* ==========================================================================
+   Tabs shortcode style - begin
+   ========================================================================== */
+
+.eltdf-tabs {
+	@include eltdfRelativeHolderLayout();
+	
+	.eltdf-tabs-nav {
+		@include eltdfRelativeHolderLayout();
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		
+		li {
+			float: left;
+			margin: 0;
+			padding: 0;
+
+			.eltdf-tabs-title{
+				display: inline-block;
+				vertical-align: middle;
+				margin: 0;
+			}
+			
+			a{
+				position: relative;
+				display: inline-block;
+				vertical-align: middle;
+				box-sizing: border-box;
+				@include eltdfTransition(color .2s ease-out, background-color .2s ease-out, border-color .2s ease-out);
+			}
+		}
+	}
+	
+	.eltdf-tab-container {
+		@include eltdfRelativeHolderLayout();
+		
+		p {
+			margin: 0;
+		}
+	}
+	
+	&.eltdf-tabs-standard {
+		
+		.eltdf-tabs-nav {
+			
+			li {
+				margin-right: 2px;
+				
+				a{
+					padding: 22px 55px;
+					background-color: $shortcode-background-color;
+
+					&:hover{
+						color: #fff;
+					}
+				}
+				
+				&.ui-state-active a,
+				&.ui-state-hover a{
+					color: #fff;
+					background-color: $first-main-color;
+				}
+
+				&:last-child{
+					margin-right: 0;
+				}
+			}
+		}
+		
+		.eltdf-tab-container {
+			margin: 31px 0 0;
+		}
+	}
+	
+	&.eltdf-tabs-simple {
+		
+		.eltdf-tabs-nav {
+			border-bottom: 1px solid $default-border-color;
+			
+			li {
+				margin: 0 31px 0 0;
+				
+				a{
+					padding: 13px 0;
+					color: #999;
+				}
+				
+				&.ui-state-active a,
+				&.ui-state-hover a{
+					color: $default-heading-color;
+				}
+				
+				&:last-child {
+					margin: 0;
+				}
+			}
+		}
+		
+		.eltdf-tab-container {
+			padding: 31px 0;
+			border-bottom: 1px solid $default-border-color;
+		}
+	}
+	
+	&.eltdf-tabs-vertical {
+		
+		.eltdf-tabs-nav {
+			display: table-cell;
+			vertical-align: top;
+			width: 205px;
+			height: 100%;
+			box-sizing: border-box;
+			
+			li {
+				display: block;
+				float: none;
+				margin: 0 0 3px;
+
+				.eltdf-tabs-title{
+					width: 100%;
+				}
+				
+				a{
+					padding: 22px 24px;
+					background-color: $shortcode-background-color;
+					width: 100%;
+
+					&:hover{
+						color: #fff;
+					}
+				}
+				
+				&.ui-state-active a,
+				&.ui-state-hover a{
+					color: #fff;
+					background-color: $first-main-color;
+				}
+				
+				&:last-child {
+					margin: 0;
+				}
+			}
+		}
+		
+		.eltdf-tab-container {
+			display: table-cell;
+			vertical-align: middle;
+			width: calc(100% - 205px);
+			height: 100%;
+			padding: 0 0 0 45px;
+			box-sizing: border-box;
+		}
+	}
+}
+/* ==========================================================================
+   Tabs shortcode style - end
+   ========================================================================== */

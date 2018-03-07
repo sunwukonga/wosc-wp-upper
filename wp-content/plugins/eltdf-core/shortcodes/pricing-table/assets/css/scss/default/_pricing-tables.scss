@@ -1,0 +1,202 @@
+/* ==========================================================================
+   Pricing Tables shortcode style - begin
+   ========================================================================== */
+
+.eltdf-pricing-tables {
+    @include eltdfRelativeHolderLayout();
+    clear: both;
+	
+	.eltdf-pt-wrapper {
+        position: relative;
+    }
+    
+    $pricing_table_space_label: ('no', 'tiny', 'small', 'normal');
+    $pricing_table_space_width: (0, 5, 10, 15);
+    
+    @for $i from 0 to length($pricing_table_space_label) {
+        &.eltdf-pt-#{nth($pricing_table_space_label,$i+1)}-space {
+            $column_width: nth($pricing_table_space_width,$i+1);
+            $column_width_margin: $column_width * 2;
+	
+	        .eltdf-pt-wrapper {
+		        @if($column_width == 0) {
+			        margin: 0;
+		        } @else {
+			        margin: 0 -#{$column_width}px;
+		        }
+	        }
+	
+	        .eltdf-price-table {
+                padding: 0 #{$column_width}px;
+                margin: 0 0 #{$column_width_margin}px;
+            }
+        }
+    }
+	
+	$pricing_table_columns: ('eltdf-two-columns', 'eltdf-three-columns', 'eltdf-four-columns', 'eltdf-five-columns');
+    @for $i from 0 to length($pricing_table_columns) {
+        &.#{nth($pricing_table_columns, $i+1)} {
+            $column_width: 100%/($i+2);
+	
+	        .eltdf-price-table {
+                width: $column_width;
+            }
+        }
+    }
+}
+
+.eltdf-price-table {
+    position: relative;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	float: left;
+    box-sizing: border-box;
+
+    .eltdf-pt-inner {
+        @include eltdfRelativeHolderLayout();
+        background-color: $shortcode-background-color;
+        background-position: center;
+        background-size: cover;
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                margin: 0;
+                padding: 17px 30px;
+                text-align: center;
+
+                &.eltdf-pt-title-holder {
+                    position: relative;
+	                
+                    .eltdf-pt-title {
+                        display: block;
+	                    margin: 0;
+                    }
+
+                    .eltdf-separator{
+                    	width: 27px;
+                    	border-bottom: 4px solid $default-heading-color;
+                    	margin: 19px 0 5px;
+                    }
+                }
+
+                &.eltdf-pt-prices {
+                    position: relative;
+                    color: $default-heading-color;
+                    font-family: $second-font;
+                    font-weight: 800;
+					padding: 67px 15px 0;
+	                
+                    .eltdf-pt-value {
+                        position: relative;
+                        vertical-align: super;
+                        bottom: -6px;
+                        font-size: 33px;
+                    	line-height: 1em;
+                    }
+
+                    .eltdf-pt-price {
+                        position: relative;
+                        display: inline-block;
+                        vertical-align: middle;
+	                    left: -2px;
+                        font-size: 75px;
+                    	line-height: 1em;
+                    }
+
+                    .eltdf-pt-mark {
+                        position: relative;
+                        display: block;
+	                    margin: 1px 0 0;
+                    }
+                }
+
+                &.eltdf-pt-content {
+                    color: $default-heading-color;
+	                padding: 0 15px;
+
+	                li{
+	                	padding: 6px;
+	                }
+
+	                li:before{
+	                	content: '\4e';
+	                	font-family: ElegantIcons;
+	                	font-size: 20px;
+	                	color: inherit;
+	                	display: inline-block;
+	                	vertical-align: middle;
+	                	margin-right: 10px;
+	                }
+                }
+
+                &.eltdf-pt-button {
+                    padding: 25px 15px 79px;
+
+                    .eltdf-btn.eltdf-pt-btn-hover-white:hover{
+                    	color: #333 !important; //because of the previous important
+                    	background-color: #fff !important; //because of the previous important
+                    }
+                }
+            }
+        }
+
+        &.eltdf-pt-dark{
+        	background-color: $shortcode-background-color;
+
+        	ul li{
+        		&.eltdf-pt-prices,
+        		&.eltdf-separator,
+        		&.eltdf-pt-content,
+        		.eltdf-pt-title{
+        			color: #333;
+        		}
+
+        		.eltdf-separator{
+        			border-bottom-color: #333;
+        		}
+
+        		.eltdf-btn.eltdf-btn-solid{
+        			color: #fff;
+        			background-color: #333;
+        		}
+        	}
+        }
+
+
+        &.eltdf-pt-light{
+        	background-color: #333;
+
+        	ul li{
+        		&.eltdf-pt-prices,
+        		&.eltdf-separator,
+        		&.eltdf-pt-content,
+        		.eltdf-pt-title,{
+        			color: #fff;
+        		}
+
+        		.eltdf-separator{
+        			border-bottom-color: #fff;
+        		}
+
+        		.eltdf-btn.eltdf-btn-solid{
+        			color: #333;
+        			background-color: #fff;
+
+        			&:hover{
+        				color: #333 !important;
+        				background-color: $shortcode-background-color !important;
+        				border-color: $shortcode-background-color !important;
+        			}
+        		}
+        	}
+        }
+    }
+}
+/* ==========================================================================
+   Pricing Tables shortcode style - end
+   ========================================================================== */

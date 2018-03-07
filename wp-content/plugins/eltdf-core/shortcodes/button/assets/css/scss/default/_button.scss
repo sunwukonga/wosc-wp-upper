@@ -1,0 +1,175 @@
+/* ==========================================================================
+   Button shortcode style - begin
+   ========================================================================== */
+
+.eltdf-btn {
+    @include eltdfButtonDefaultStyle();
+    @include eltdfButtonMediumParams();
+
+    &.eltdf-btn-simple {
+        padding: 0 !important;
+        color: $default-heading-color;
+        background-color: transparent;
+        border: 0;
+        vertical-align: middle;
+
+        .eltdf-btn-text {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        &:not(.eltdf-btn-custom-hover-color):not(.eltdf-btn-hover-unveiling):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            color: $first-main-color!important;
+        }
+
+        &:not(.eltdf-btn-custom-hover-bg):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            background-color: transparent !important;
+        }
+
+        &:not(.eltdf-btn-custom-border-hover):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            border-color: transparent !important;
+        }
+
+		&.eltdf-btn-hover-unveiling{
+			overflow: hidden;
+
+			.eltdf-btn-text{
+				@include eltdfTransform(translate3d(-100%,0,0));
+				-webkit-transition: -webkit-transform .3s cubic-bezier(.38,1,.57,1);
+				transition: transform .3s cubic-bezier(.38,1,.57,1);
+                will-change:transform;
+			}
+
+			.eltdf-btn-icon-holder{
+				left: -100%;
+                @include eltdfTransform(translate3d(100%,0,0));
+				-webkit-transition: -webkit-transform .35s ease , left .35s ease;
+				transition: transform .35s ease, left .35s ease;
+                will-change: transform; //jump fix
+			}
+
+            &.eltdf-hovered {
+				.eltdf-btn-text{
+                    @include eltdfTransform(translate3d(0,0,0));
+                    -webkit-transition: -webkit-transform .4s cubic-bezier(.38,1,.57,1);
+                    transition: transform .4s cubic-bezier(.38,1,.57,1);
+				}
+
+				.eltdf-btn-icon-holder{
+					left: 0;
+                    @include eltdfTransform(translate3d(0,0,0));
+                    -webkit-transition: -webkit-transform .4s cubic-bezier(.38,1,.57,1), left .4s cubic-bezier(.38,1,.57,1);
+                    transition: transform .4s cubic-bezier(.38,1,.57,1), left .4s cubic-bezier(.38,1,.57,1);
+				}
+			}
+		}
+    }
+
+    &.eltdf-btn-solid {
+        @include eltdfButtonSolidColor();
+
+        .eltdf-btn-text{
+            top: 1px;
+            position: relative;
+        }
+
+        &:not(.eltdf-btn-custom-hover-color):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            color: #fff !important;
+        }
+
+        &:not(.eltdf-btn-custom-hover-bg):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            background-color: $default-heading-color !important;
+        }
+    }
+
+    &.eltdf-btn-solid-dark{
+        @include eltdfButtonSolidDarkColor();
+
+        .eltdf-btn-text{
+            top: 1px;
+            position: relative;
+        }
+
+        &:not(.eltdf-btn-custom-hover-color):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            color: #fff !important;
+        }
+
+        &:not(.eltdf-btn-custom-hover-bg):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            background-color: $first-main-color !important;
+        }
+    }
+
+    &.eltdf-btn-outline {
+
+        .eltdf-btn-text{
+            top: 1px;
+            position: relative;
+        }
+
+	    @include eltdfButtonOutlineColor();
+
+        &:not(.eltdf-btn-custom-hover-color):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            color: #fff !important;
+        }
+
+        &:not(.eltdf-btn-custom-hover-bg):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            background-color: $first-main-color !important;
+        }
+
+        &:not(.eltdf-btn-custom-border-hover):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            border-color: $first-main-color !important;
+        }
+    }
+
+    &.eltdf-btn-small {
+        @include eltdfButtonSmallParams();
+    }
+
+    &.eltdf-btn-medium {
+        //same as default
+    }
+
+    &.eltdf-btn-large {
+        @include eltdfButtonLargeParams();
+    }
+
+    &.eltdf-btn-huge {
+        @include eltdfButtonHugeParams();
+    }
+
+    &.eltdf-btn-icon {
+
+        > i,
+        > span:not(.eltdf-btn-text) {
+            position: relative;
+            display: inline-block;
+            vertical-align: middle; //top initially
+            margin: 0 0 0 4px;
+            font-size: 1.5em;
+            line-height: inherit;
+
+            &:before {
+                display: block;
+                line-height: inherit;
+            }
+        }
+    }
+}
+
+input[type=submit].eltdf-btn,
+button.eltdf-btn {
+    cursor: pointer;
+}
+/* ==========================================================================
+   Button shortcode style - end
+   ========================================================================== */

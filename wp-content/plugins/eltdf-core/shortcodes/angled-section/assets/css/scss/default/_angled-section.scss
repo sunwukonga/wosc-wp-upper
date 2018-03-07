@@ -1,0 +1,81 @@
+/* ==========================================================================
+   Angled Section shortcode style - begin
+   ========================================================================== */
+
+.eltdf-angled-section-holder {
+	overflow: hidden;
+	background-size: cover;
+
+	.eltdf-angled-section{
+		position: relative;
+		display: inline-block;
+		width: 42%;
+		box-sizing: border-box;
+	}
+
+	.eltdf-angled-section-content{
+		position: relative;
+		z-index: 5;
+	}
+
+	.eltdf-as-bckg{
+		position: absolute;
+		top: 0;
+		width: 200%;
+		z-index: 1;
+		height: 100%;
+		overflow: hidden;
+
+		.eltdf-angled-bckg-holder{
+			content: '';
+			position: absolute;
+			top: 0;
+			height: 100%;
+			width: 100%;
+			background-color: #333;
+			background-position: center;
+			background-size: cover;
+		}
+	}
+
+	&.eltdf-angled-content-right{
+		background-position: left;
+
+		.eltdf-angled-section{
+			float: right;
+			padding: 10% 10% 10% 5%;
+		}
+
+		.eltdf-as-bckg{
+			left: -20%;
+			@include eltdfTransform(skew(-25deg));
+		}
+
+		.eltdf-angled-bckg-holder{
+			left: -20%;
+			@include eltdfTransform(skew(25deg));
+		}
+	}
+
+	&.eltdf-angled-content-left{
+		background-position: right;
+
+		.eltdf-angled-section{
+			float: left;
+			padding: 10% 5% 10% 10%;
+		}
+
+		.eltdf-as-bckg{
+			right: -20%;
+			@include eltdfTransform(skew(25deg));
+		}
+
+		.eltdf-angled-bckg-holder{
+			right: -20%;
+			@include eltdfTransform(skew(-25deg));
+		}
+	}
+}
+/* ==========================================================================
+   Angled Section shortcode style - end
+   ========================================================================== */

@@ -1,0 +1,36 @@
+/* ==========================================================================
+   Angled Section shortcode responsive style - begin
+   ========================================================================== */
+
+
+.eltdf-angled-section-holder {
+	.eltdf-angled-section{
+		@include laptop-landscape-medium{
+			width: 52%;
+		}
+
+		@include ipad-landscape{
+			width: 51%;
+		}
+
+		@include ipad-portrait{
+			width: 70%;
+		}
+
+		@include phone-portrait{
+			padding: 30px;
+			width: 100%;
+		}
+	}
+
+	.eltdf-as-bckg{
+		@include phone-portrait{
+			@include eltdfTransform(none);
+		}
+	}
+}
+
+
+/* ==========================================================================
+   Angled Section shortcode responsive style - end
+   ========================================================================== */

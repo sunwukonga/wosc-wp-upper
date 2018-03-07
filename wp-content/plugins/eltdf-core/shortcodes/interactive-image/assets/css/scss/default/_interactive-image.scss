@@ -1,0 +1,82 @@
+/* ==========================================================================
+   Interactive Image shortcode style - begin
+   ========================================================================== */
+
+.eltdf-interactive-image {
+    @include eltdfRelativeHolderLayout();
+	
+	.eltdf-ii-image-holder {
+		@include eltdfRelativeHolderLayout();
+		-webkit-box-shadow: 0px 3px 25px 0px rgba(0,0,0,0.07);
+		box-shadow: 0px 3px 25px 0px rgba(0,0,0,0.07);
+		@include eltdfTransition(all .3s);
+
+		> a {
+			@include eltdfAbsoluteHolderLayout();
+			z-index: 200;
+		}
+
+		img {
+			vertical-align: middle;
+		}
+	}
+
+	&.eltdf-ii-with-title {
+		.eltdf-ii-image-holder-inner {
+			@include eltdfTransition(all .35s);
+		}
+
+		.eltdf-ii-title-holder {
+			position: absolute;
+			bottom: -27px;
+			right: 20px;
+			z-index: 100;
+			max-width: 50%;
+			background: #fff;
+			padding: 2px 48px;
+			-webkit-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.1);
+			box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.1);
+			-webkit-transition: -webkit-box-shadow .2s ease, -webkit-transform .35s cubic-bezier(.38,1.6,.57,1.6);
+			transition: box-shadow .2s ease, transform .35s cubic-bezier(.38,1.6,.57,1.6);
+
+			> a {
+				@include eltdfAbsoluteHolderLayout();
+			}
+		}
+
+		&:hover {
+			.eltdf-ii-image-holder {
+				-webkit-box-shadow: 0px 7px 30px 0px rgba(0,0,0,0.2);
+				box-shadow: 0px 7px 30px 0px rgba(0,0,0,0.2);
+
+				.eltdf-ii-image-holder-inner {
+					@include eltdfTransform(scale(1.03));
+				}
+			}
+
+			.eltdf-ii-title-holder {
+				@include eltdfTransform(translate3d(0,-10px,0));
+				-webkit-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.1);
+				box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.1);
+			}
+		}
+	}
+
+	&.eltdf-ii-without-title {
+		.eltdf-ii-image-holder {
+			-webkit-transition: -webkit-box-shadow .2s ease, -webkit-transform .35s cubic-bezier(.38,1.6,.57,1.6);
+			transition: box-shadow .2s ease, transform .35s cubic-bezier(.38,1.6,.57,1.6);
+		}
+
+		&:hover {
+			.eltdf-ii-image-holder {
+				@include eltdfTransform(translate3d(0,-10px,0));
+				-webkit-box-shadow: 0 12px 35px 0 rgba(0,0,0,.15);
+				box-shadow: 0 12px 35px 0 rgba(0,0,0,.15);
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Interactive Image shortcode style - end
+   ========================================================================== */

@@ -1,0 +1,54 @@
+/* generated in /home2/demooctalogo/public_html/bilal-khan-practice/wp-content/themes/mrseo/assets/custom-styles/general-custom-styles.php mrseo_elated_content_styles function */
+.eltdf-content .eltdf-content-inner > .eltdf-full-width > .eltdf-full-width-inner { padding-top: 0px;}
+
+/* generated in /home2/demooctalogo/public_html/bilal-khan-practice/wp-content/themes/mrseo/assets/custom-styles/general-custom-styles.php mrseo_elated_content_styles function */
+.eltdf-content .eltdf-content-inner > .eltdf-container > .eltdf-container-inner { padding-top: 40px;}
+
+/* generated in /home2/demooctalogo/public_html/bilal-khan-practice/wp-content/themes/mrseo/framework/modules/contactform7/custom-styles/contact-form.php mrseo_elated_contact_form7_text_styles_1 function */
+.cf7_custom_style_1 input.wpcf7-form-control.wpcf7-text, .cf7_custom_style_1 input.wpcf7-form-control.wpcf7-number, .cf7_custom_style_1 input.wpcf7-form-control.wpcf7-date, .cf7_custom_style_1 textarea.wpcf7-form-control.wpcf7-textarea, .cf7_custom_style_1 select.wpcf7-form-control.wpcf7-select, .cf7_custom_style_1 input.wpcf7-form-control.wpcf7-quiz { background-color: rgba(255, 255, 255, 1);padding-top: 21px;padding-right: 28px;padding-bottom: 21px;padding-left: 28px;}
+
+/* generated in /home2/demooctalogo/public_html/bilal-khan-practice/wp-content/themes/mrseo/framework/modules/contactform7/custom-styles/contact-form.php mrseo_elated_contact_form7_focus_styles_1 function */
+.cf7_custom_style_1 input.wpcf7-form-control.wpcf7-text:focus, .cf7_custom_style_1 input.wpcf7-form-control.wpcf7-number:focus, .cf7_custom_style_1 input.wpcf7-form-control.wpcf7-date:focus, .cf7_custom_style_1 textarea.wpcf7-form-control.wpcf7-textarea:focus, .cf7_custom_style_1 select.wpcf7-form-control.wpcf7-select:focus, .cf7_custom_style_1 input.wpcf7-form-control.wpcf7-quiz:focus { background-color: rgba(255, 255, 255, 1);}
+
+/* generated in /home2/demooctalogo/public_html/bilal-khan-practice/wp-content/themes/mrseo/framework/modules/contactform7/custom-styles/contact-form.php mrseo_elated_contact_form7_button_styles_1 function */
+.cf7_custom_style_1 input.wpcf7-form-control.wpcf7-submit { color: #333333;padding-top: 0;padding-bottom: 0;height: 70px;line-height: 70px;background-color: rgba(255, 255, 255, 1);}
+
+/* generated in /home2/demooctalogo/public_html/bilal-khan-practice/wp-content/themes/mrseo/framework/modules/contactform7/custom-styles/contact-form.php mrseo_elated_contact_form7_button_hover_styles_1 function */
+.cf7_custom_style_1 input.wpcf7-form-control.wpcf7-submit:not([disabled]):hover { color: #ffffff;background-color: rgba(51, 51, 51, 1);}
+
+/* generated in /home2/demooctalogo/public_html/bilal-khan-practice/wp-content/themes/mrseo/framework/modules/contactform7/custom-styles/contact-form.php mrseo_elated_contact_form7_text_styles_2 function */
+.cf7_custom_style_2 textarea.wpcf7-form-control.wpcf7-textarea { height: 280px;}
+
+/* generated in /home2/demooctalogo/public_html/bilal-khan-practice/wp-content/themes/mrseo/framework/modules/contactform7/custom-styles/contact-form.php mrseo_elated_contact_form7_text_styles_2 function */
+.cf7_custom_style_2 input.wpcf7-form-control.wpcf7-text, .cf7_custom_style_2 input.wpcf7-form-control.wpcf7-number, .cf7_custom_style_2 input.wpcf7-form-control.wpcf7-date, .cf7_custom_style_2 textarea.wpcf7-form-control.wpcf7-textarea, .cf7_custom_style_2 select.wpcf7-form-control.wpcf7-select, .cf7_custom_style_2 input.wpcf7-form-control.wpcf7-quiz { padding-top: 32px;padding-right: 28px;padding-bottom: 32px;padding-left: 28px;}
+
+/* generated in /home2/demooctalogo/public_html/bilal-khan-practice/wp-content/themes/mrseo/framework/modules/contactform7/custom-styles/contact-form.php mrseo_elated_contact_form7_button_hover_styles_2 function */
+.cf7_custom_style_2 input.wpcf7-form-control.wpcf7-submit:not([disabled]):hover { color: #ffffff;background-color: rgba(51, 51, 51, 1);}
+
+/* generated in /home2/demooctalogo/public_html/bilal-khan-practice/wp-content/themes/mrseo/framework/modules/contactform7/custom-styles/contact-form.php mrseo_elated_contact_form7_text_styles_3 function */
+.cf7_custom_style_3 input.wpcf7-form-control.wpcf7-text, .cf7_custom_style_3 input.wpcf7-form-control.wpcf7-number, .cf7_custom_style_3 input.wpcf7-form-control.wpcf7-date, .cf7_custom_style_3 textarea.wpcf7-form-control.wpcf7-textarea, .cf7_custom_style_3 select.wpcf7-form-control.wpcf7-select, .cf7_custom_style_3 input.wpcf7-form-control.wpcf7-quiz { background-color: rgba(247, 247, 247, 1);padding-top: 21px;padding-right: 28px;padding-bottom: 21px;padding-left: 28px;}
+
+/* generated in /home2/demooctalogo/public_html/bilal-khan-practice/wp-content/themes/mrseo/framework/modules/contactform7/custom-styles/contact-form.php mrseo_elated_contact_form7_button_styles_3 function */
+.cf7_custom_style_3 input.wpcf7-form-control.wpcf7-submit { color: #333333;padding-top: 0;padding-bottom: 0;height: 70px;line-height: 70px;background-color: rgba(247, 247, 247, 1);}
+
+/* generated in /home2/demooctalogo/public_html/bilal-khan-practice/wp-content/themes/mrseo/framework/modules/contactform7/custom-styles/contact-form.php mrseo_elated_contact_form7_button_hover_styles_3 function */
+.cf7_custom_style_3 input.wpcf7-form-control.wpcf7-submit:not([disabled]):hover { color: #ffffff;background-color: rgba(113, 203, 254, 1);}
+
+/* generated in /home2/demooctalogo/public_html/bilal-khan-practice/wp-content/themes/mrseo/framework/modules/error404/custom-styles/custom-styles.php mrseo_elated_404_header_general_styles function */
+.eltdf-404-page .eltdf-page-header .eltdf-menu-area { background-color: rgba(255, 255, 255, 0) !important;}
+
+/* generated in /home2/demooctalogo/public_html/bilal-khan-practice/wp-content/themes/mrseo/framework/modules/error404/custom-styles/custom-styles.php mrseo_elated_404_footer_top_general_styles function */
+.eltdf-404-page .eltdf-content { background-image: url(https://demo-octalogo.com/bilal-khan-practice/wp-content/uploads/2017/02/404-image.png);background-position: center 0;background-size: cover;background-repeat: no-repeat;}
+
+/* generated in /home2/demooctalogo/public_html/bilal-khan-practice/wp-content/themes/mrseo/framework/modules/header/types/top-header/admin/custom-styles/top-header-custom-styles.php mrseo_elated_header_top_bar_styles function */
+.eltdf-top-bar-background { height: 90px;}
+
+/* generated in /home2/demooctalogo/public_html/bilal-khan-practice/wp-content/themes/mrseo/framework/modules/sidearea/custom-styles/sidearea.php mrseo_elated_side_area_icon_color_styles function */
+.eltdf-side-menu a.eltdf-close-side-menu { color: #ffffff;}
+
+/* generated in /home2/demooctalogo/public_html/bilal-khan-practice/wp-content/themes/mrseo/framework/modules/sidearea/custom-styles/sidearea.php mrseo_elated_side_area_icon_color_styles function */
+.eltdf-side-menu a.eltdf-close-side-menu:hover { color: #71cbfe;}
+
+/* generated in /home2/demooctalogo/public_html/bilal-khan-practice/wp-content/themes/mrseo/framework/modules/sidearea/custom-styles/sidearea.php mrseo_elated_side_area_styles function */
+.eltdf-side-menu { background-color: #333333;padding: 65px 30px;text-align: left;}
+

@@ -1,0 +1,52 @@
+/* ==========================================================================
+   Section Title shortcode styles - begin
+   ========================================================================== */
+
+.eltdf-section-title-holder {
+    @include eltdfRelativeHolderLayout();
+	box-sizing: border-box;
+	
+	@include phone-landscape {
+		padding: 0 !important; // it can be set inline in shortcode options
+	}
+	
+    .eltdf-st-title {
+	    display: block;
+        margin: 0;
+
+      .eltdf-section-ital{
+        font-style: italic;
+        font-weight: 400;
+      }
+    }
+    
+    .eltdf-st-text {
+	    display: block;
+        margin: 14px 0 0;
+    }
+
+    .eltdf-section-subtitle{
+        font-size: 20px;
+        color: #888888;
+        font-weight: 400;
+        margin-bottom: 11px;
+    }
+
+    .eltdf-title-separator{
+      width: 27px;
+      height: 5px;
+      background-color: #333;
+      display: none;
+      margin-bottom: 14px;
+      margin-top: 26px;
+
+      &.eltdf-enable-separator{
+        display: inline-block;
+      }
+    }
+}
+/* ==========================================================================
+   Section Title shortcode styles - end
+   ========================================================================== */
+
+

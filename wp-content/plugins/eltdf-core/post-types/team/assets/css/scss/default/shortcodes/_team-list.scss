@@ -1,0 +1,59 @@
+/* ==========================================================================
+# Team list - begin
+	========================================================================== */
+
+.eltdf-team-list-holder {
+    @include eltdfRelativeHolderLayout();
+    
+    .eltdf-tl-inner {
+        margin: 0;
+    }
+
+    .eltdf-team {
+        float: left;
+        padding: 0;
+        margin-bottom: 0;
+        box-sizing: border-box;
+
+        &.info-bellow {
+        	margin-bottom: 25px;
+        }
+    }
+
+    $team_columns_number: ('two', 'three', 'four', 'five');
+
+    @for $i from 0 to length($team_columns_number) {
+        &.eltdf-tl-#{nth($team_columns_number,$i+1)}-columns {
+
+            .eltdf-team {
+                width: 100% / ($i+2);
+            }
+
+            @if ($i > 1) { // set different break point for four and five columns
+                @media only screen and (min-width:  $laptop-landscape-plus-pixel) {
+
+                    .eltdf-team {
+
+                        &:nth-child(#{$i+2}n+1) {
+                            clear: both;
+                        }
+                    }
+                }
+            } @else {
+                @media only screen and (min-width:  $ipad-landscape-plus-pixel) {
+
+                    .eltdf-team {
+
+                        &:nth-child(#{$i+2}n+1) {
+                            clear: both;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+# Team list - end
+========================================================================== */

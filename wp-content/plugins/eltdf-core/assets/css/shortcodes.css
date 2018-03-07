@@ -1,0 +1,3953 @@
+/* ==========================================================================
+   Global partials
+   ========================================================================== */
+/* Button mixins - start */
+/* Button mixins - end */
+/* ==========================================================================
+   Shortcodes styles
+   ========================================================================== */
+/* ==========================================================================
+   Accordions shortcode style - begin
+   ========================================================================== */
+.eltdf-accordion-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.eltdf-accordion-holder .eltdf-title-holder {
+  position: relative;
+  cursor: pointer;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-transform: translateZ(0px);
+  -moz-transform: translateZ(0px);
+  transform: translateZ(0px);
+  -webkit-transition: color 0.2s ease-out, background-color 0.2s ease-out;
+  -moz-transition: color 0.2s ease-out, background-color 0.2s ease-out;
+  transition: color 0.2s ease-out, background-color 0.2s ease-out;
+}
+
+.eltdf-accordion-holder .eltdf-title-holder .eltdf-tab-title {
+  display: block;
+  line-height: inherit;
+}
+
+.eltdf-accordion-holder .eltdf-title-holder .eltdf-accordion-mark {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 20px;
+  height: 18px;
+  margin: -1px 0 0;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.eltdf-accordion-holder .eltdf-title-holder .eltdf-accordion-mark span {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: inherit;
+  line-height: inherit;
+  -webkit-transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+}
+
+.eltdf-accordion-holder .eltdf-title-holder .eltdf-accordion-mark span:before {
+  display: block;
+  line-height: inherit;
+}
+
+.eltdf-accordion-holder .eltdf-title-holder .eltdf-accordion-mark span.eltdf_icon_minus {
+  opacity: 0;
+}
+
+.eltdf-accordion-holder .eltdf-title-holder .eltdf-accordion-mark span.eltdf_icon_plus {
+  opacity: 1;
+}
+
+.eltdf-accordion-holder .eltdf-title-holder.ui-state-active .eltdf-accordion-mark span.eltdf_icon_minus, .eltdf-accordion-holder .eltdf-title-holder.ui-state-hover .eltdf-accordion-mark span.eltdf_icon_minus {
+  opacity: 1;
+}
+
+.eltdf-accordion-holder .eltdf-title-holder.ui-state-active .eltdf-accordion-mark span.eltdf_icon_plus, .eltdf-accordion-holder .eltdf-title-holder.ui-state-hover .eltdf-accordion-mark span.eltdf_icon_plus {
+  opacity: 0;
+}
+
+.eltdf-accordion-holder span.eltdf-title-holder {
+  display: block;
+  color: #333333;
+  font-size: 12px;
+  line-height: 26px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.eltdf-accordion-holder span.eltdf-title-holder .eltdf-accordion-mark {
+  margin: -2px 0 0;
+}
+
+.eltdf-accordion-holder .eltdf-accordion-content {
+  margin: 0;
+}
+
+.eltdf-accordion-holder .eltdf-accordion-content p {
+  margin: 0;
+}
+
+.eltdf-accordion-holder.eltdf-ac-boxed.eltdf-white-skin .eltdf-title-holder {
+  color: #fff;
+  background-color: rgba(241, 241, 241, 0.1);
+}
+
+.eltdf-accordion-holder.eltdf-ac-boxed.eltdf-white-skin .eltdf-title-holder.ui-state-active, .eltdf-accordion-holder.eltdf-ac-boxed.eltdf-white-skin .eltdf-title-holder.ui-state-hover {
+  color: #333;
+  background-color: #fff;
+}
+
+.eltdf-accordion-holder.eltdf-ac-boxed.eltdf-white-skin .eltdf-accordion-content {
+  color: #fff;
+}
+
+.eltdf-accordion-holder.eltdf-ac-boxed .eltdf-title-holder {
+  margin: 2px 0 0;
+  padding: 22px 0 22px 50px;
+  background-color: #f6f6f6;
+}
+
+.eltdf-accordion-holder.eltdf-ac-boxed .eltdf-title-holder:first-child {
+  margin: 0;
+}
+
+.eltdf-accordion-holder.eltdf-ac-boxed .eltdf-title-holder .eltdf-accordion-mark {
+  left: 19px;
+}
+
+.eltdf-accordion-holder.eltdf-ac-boxed .eltdf-title-holder.ui-state-active, .eltdf-accordion-holder.eltdf-ac-boxed .eltdf-title-holder.ui-state-hover {
+  color: #fff;
+  background-color: #71cbfe;
+}
+
+.eltdf-accordion-holder.eltdf-ac-boxed .eltdf-accordion-content {
+  padding: 24px 0 29px 39px;
+}
+
+.eltdf-accordion-holder.eltdf-ac-simple {
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.eltdf-accordion-holder.eltdf-ac-simple .eltdf-title-holder {
+  padding: 17px 0 17px 30px;
+  border-top: 1px solid #e1e1e1;
+}
+
+.eltdf-accordion-holder.eltdf-ac-simple .eltdf-accordion-content {
+  border-top: 1px solid transparent;
+}
+
+.eltdf-accordion-holder.eltdf-ac-simple .eltdf-accordion-content.ui-accordion-content-active {
+  border-color: #e1e1e1;
+}
+
+.eltdf-accordion-holder.eltdf-ac-simple .eltdf-accordion-content {
+  padding: 21px 0 16px;
+}
+
+/* ==========================================================================
+   Accordions shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Angled Section shortcode style - begin
+   ========================================================================== */
+.eltdf-angled-section-holder {
+  overflow: hidden;
+  background-size: cover;
+}
+
+.eltdf-angled-section-holder .eltdf-angled-section {
+  position: relative;
+  display: inline-block;
+  width: 42%;
+  box-sizing: border-box;
+}
+
+.eltdf-angled-section-holder .eltdf-angled-section-content {
+  position: relative;
+  z-index: 5;
+}
+
+.eltdf-angled-section-holder .eltdf-as-bckg {
+  position: absolute;
+  top: 0;
+  width: 200%;
+  z-index: 1;
+  height: 100%;
+  overflow: hidden;
+}
+
+.eltdf-angled-section-holder .eltdf-as-bckg .eltdf-angled-bckg-holder {
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #333;
+  background-position: center;
+  background-size: cover;
+}
+
+.eltdf-angled-section-holder.eltdf-angled-content-right {
+  background-position: left;
+}
+
+.eltdf-angled-section-holder.eltdf-angled-content-right .eltdf-angled-section {
+  float: right;
+  padding: 10% 10% 10% 5%;
+}
+
+.eltdf-angled-section-holder.eltdf-angled-content-right .eltdf-as-bckg {
+  left: -20%;
+  -webkit-transform: skew(-25deg);
+  -moz-transform: skew(-25deg);
+  transform: skew(-25deg);
+}
+
+.eltdf-angled-section-holder.eltdf-angled-content-right .eltdf-angled-bckg-holder {
+  left: -20%;
+  -webkit-transform: skew(25deg);
+  -moz-transform: skew(25deg);
+  transform: skew(25deg);
+}
+
+.eltdf-angled-section-holder.eltdf-angled-content-left {
+  background-position: right;
+}
+
+.eltdf-angled-section-holder.eltdf-angled-content-left .eltdf-angled-section {
+  float: left;
+  padding: 10% 5% 10% 10%;
+}
+
+.eltdf-angled-section-holder.eltdf-angled-content-left .eltdf-as-bckg {
+  right: -20%;
+  -webkit-transform: skew(25deg);
+  -moz-transform: skew(25deg);
+  transform: skew(25deg);
+}
+
+.eltdf-angled-section-holder.eltdf-angled-content-left .eltdf-angled-bckg-holder {
+  right: -20%;
+  -webkit-transform: skew(-25deg);
+  -moz-transform: skew(-25deg);
+  transform: skew(-25deg);
+}
+
+/* ==========================================================================
+   Angled Section shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Banner shortcode style - begin
+   ========================================================================== */
+.eltdf-banner-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.eltdf-banner-holder .eltdf-banner-image {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.eltdf-banner-holder .eltdf-banner-image img {
+  display: block;
+}
+
+.eltdf-banner-holder .eltdf-banner-text-holder {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.eltdf-banner-holder .eltdf-banner-text-inner {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  height: 100%;
+  padding: 7% 6% 5% 8%;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 1200px) {
+  .eltdf-banner-holder .eltdf-banner-text-inner {
+    padding: 6% 4% 4% 7%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .eltdf-banner-holder .eltdf-banner-text-inner {
+    padding: 25px 30px;
+  }
+}
+
+.eltdf-banner-holder .eltdf-banner-subtitle {
+  margin: 0;
+}
+
+.eltdf-banner-holder .eltdf-banner-title {
+  margin: 4px 0 0;
+}
+
+.eltdf-banner-holder .eltdf-banner-text {
+  margin: 14px 0 0;
+  line-height: 1em;
+}
+
+.eltdf-banner-holder .eltdf-banner-link {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* ==========================================================================
+   Banner shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Button shortcode style - begin
+   ========================================================================== */
+.eltdf-btn {
+  font-family: inherit;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: auto;
+  outline: none;
+  line-height: 21px;
+  font-weight: 800;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  border-radius: 0;
+  margin: 0;
+  letter-spacing: 1px;
+  -webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  -moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  padding: 15px 49px;
+  font-size: 13px;
+}
+
+.eltdf-btn.eltdf-btn-simple {
+  padding: 0 !important;
+  color: #333333;
+  background-color: transparent;
+  border: 0;
+  vertical-align: middle;
+}
+
+.eltdf-btn.eltdf-btn-simple .eltdf-btn-text {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.eltdf-btn.eltdf-btn-simple:not(.eltdf-btn-custom-hover-color):not(.eltdf-btn-hover-unveiling):hover {
+  color: #71cbfe !important;
+}
+
+.eltdf-btn.eltdf-btn-simple:not(.eltdf-btn-custom-hover-bg):hover {
+  background-color: transparent !important;
+}
+
+.eltdf-btn.eltdf-btn-simple:not(.eltdf-btn-custom-border-hover):hover {
+  border-color: transparent !important;
+}
+
+.eltdf-btn.eltdf-btn-simple.eltdf-btn-hover-unveiling {
+  overflow: hidden;
+}
+
+.eltdf-btn.eltdf-btn-simple.eltdf-btn-hover-unveiling .eltdf-btn-text {
+  -webkit-transform: translate3d(-100%, 0, 0);
+  -moz-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.38, 1, 0.57, 1);
+  transition: transform 0.3s cubic-bezier(0.38, 1, 0.57, 1);
+  will-change: transform;
+}
+
+.eltdf-btn.eltdf-btn-simple.eltdf-btn-hover-unveiling .eltdf-btn-icon-holder {
+  left: -100%;
+  -webkit-transform: translate3d(100%, 0, 0);
+  -moz-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+  -webkit-transition: -webkit-transform .35s ease , left .35s ease;
+  transition: transform .35s ease, left .35s ease;
+  will-change: transform;
+}
+
+.eltdf-btn.eltdf-btn-simple.eltdf-btn-hover-unveiling.eltdf-hovered .eltdf-btn-text {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.38, 1, 0.57, 1);
+  transition: transform 0.4s cubic-bezier(0.38, 1, 0.57, 1);
+}
+
+.eltdf-btn.eltdf-btn-simple.eltdf-btn-hover-unveiling.eltdf-hovered .eltdf-btn-icon-holder {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.38, 1, 0.57, 1), left 0.4s cubic-bezier(0.38, 1, 0.57, 1);
+  transition: transform 0.4s cubic-bezier(0.38, 1, 0.57, 1), left 0.4s cubic-bezier(0.38, 1, 0.57, 1);
+}
+
+.eltdf-btn.eltdf-btn-solid {
+  color: #fff;
+  background-color: #71cbfe;
+  border: 2px solid transparent;
+}
+
+.eltdf-btn.eltdf-btn-solid .eltdf-btn-text {
+  top: 1px;
+  position: relative;
+}
+
+.eltdf-btn.eltdf-btn-solid:not(.eltdf-btn-custom-hover-color):hover {
+  color: #fff !important;
+}
+
+.eltdf-btn.eltdf-btn-solid:not(.eltdf-btn-custom-hover-bg):hover {
+  background-color: #333333 !important;
+}
+
+.eltdf-btn.eltdf-btn-solid-dark {
+  color: #fff;
+  background-color: #333333;
+  border: 2px solid transparent;
+}
+
+.eltdf-btn.eltdf-btn-solid-dark .eltdf-btn-text {
+  top: 1px;
+  position: relative;
+}
+
+.eltdf-btn.eltdf-btn-solid-dark:not(.eltdf-btn-custom-hover-color):hover {
+  color: #fff !important;
+}
+
+.eltdf-btn.eltdf-btn-solid-dark:not(.eltdf-btn-custom-hover-bg):hover {
+  background-color: #71cbfe !important;
+}
+
+.eltdf-btn.eltdf-btn-outline {
+  color: #71cbfe;
+  background-color: transparent;
+  border: 2px solid #71cbfe;
+}
+
+.eltdf-btn.eltdf-btn-outline .eltdf-btn-text {
+  top: 1px;
+  position: relative;
+}
+
+.eltdf-btn.eltdf-btn-outline:not(.eltdf-btn-custom-hover-color):hover {
+  color: #fff !important;
+}
+
+.eltdf-btn.eltdf-btn-outline:not(.eltdf-btn-custom-hover-bg):hover {
+  background-color: #71cbfe !important;
+}
+
+.eltdf-btn.eltdf-btn-outline:not(.eltdf-btn-custom-border-hover):hover {
+  border-color: #71cbfe !important;
+}
+
+.eltdf-btn.eltdf-btn-small {
+  padding: 11px 36px;
+}
+
+.eltdf-btn.eltdf-btn-large {
+  padding: 17px 66px;
+}
+
+.eltdf-btn.eltdf-btn-huge {
+  display: block;
+  text-align: center;
+  padding: 19px 46px;
+}
+
+.eltdf-btn.eltdf-btn-icon > i,
+.eltdf-btn.eltdf-btn-icon > span:not(.eltdf-btn-text) {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 0 4px;
+  font-size: 1.5em;
+  line-height: inherit;
+}
+
+.eltdf-btn.eltdf-btn-icon > i:before,
+.eltdf-btn.eltdf-btn-icon > span:not(.eltdf-btn-text):before {
+  display: block;
+  line-height: inherit;
+}
+
+input[type=submit].eltdf-btn,
+button.eltdf-btn {
+  cursor: pointer;
+}
+
+/* ==========================================================================
+   Button shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Call To Action shortcode style - begin
+   ========================================================================== */
+.eltdf-call-to-action-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  /***** Layout Style - begin *****/
+  /***** Layout Style - end *****/
+  /***** Columns Space - begin *****/
+  /***** Columns Space - end *****/
+}
+
+.eltdf-call-to-action-holder .eltdf-cta-text-holder,
+.eltdf-call-to-action-holder .eltdf-cta-button-holder {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.eltdf-call-to-action-holder .eltdf-cta-text-holder h1, .eltdf-call-to-action-holder .eltdf-cta-text-holder h2, .eltdf-call-to-action-holder .eltdf-cta-text-holder h3, .eltdf-call-to-action-holder .eltdf-cta-text-holder h4, .eltdf-call-to-action-holder .eltdf-cta-text-holder h5, .eltdf-call-to-action-holder .eltdf-cta-text-holder h6 {
+  margin: 0;
+}
+
+.eltdf-call-to-action-holder .eltdf-cta-button-holder .eltdf-btn {
+  white-space: nowrap;
+}
+
+.eltdf-call-to-action-holder.eltdf-normal-layout:not(.eltdf-cta-together) .eltdf-cta-inner {
+  display: table;
+}
+
+.eltdf-call-to-action-holder.eltdf-normal-layout:not(.eltdf-cta-together):not(.eltdf-content-in-grid) .eltdf-cta-inner {
+  width: 100%;
+}
+
+.eltdf-call-to-action-holder.eltdf-normal-layout:not(.eltdf-cta-together) .eltdf-cta-text-holder,
+.eltdf-call-to-action-holder.eltdf-normal-layout:not(.eltdf-cta-together) .eltdf-cta-button-holder {
+  display: table-cell;
+  box-sizing: border-box;
+}
+
+.eltdf-call-to-action-holder.eltdf-normal-layout:not(.eltdf-cta-together) .eltdf-cta-button-holder {
+  text-align: right;
+}
+
+.eltdf-call-to-action-holder.eltdf-simple-layout .eltdf-cta-inner {
+  text-align: center;
+}
+
+.eltdf-call-to-action-holder.eltdf-simple-layout .eltdf-cta-text-holder,
+.eltdf-call-to-action-holder.eltdf-simple-layout .eltdf-cta-button-holder {
+  width: 100%;
+}
+
+.eltdf-call-to-action-holder.eltdf-simple-layout .eltdf-cta-button-holder {
+  margin: 28px 0 0;
+}
+
+.eltdf-call-to-action-holder.eltdf-cta-together {
+  text-align: center;
+}
+
+.eltdf-call-to-action-holder.eltdf-cta-together .eltdf-cta-text-holder,
+.eltdf-call-to-action-holder.eltdf-cta-together .eltdf-cta-button-holder {
+  padding: 0 25px;
+  box-sizing: border-box;
+}
+
+.eltdf-call-to-action-holder.eltdf-cta-together .eltdf-cta-text-holder {
+  max-width: 70%;
+}
+
+.eltdf-call-to-action-holder.eltdf-two-halves-columns .eltdf-cta-text-holder,
+.eltdf-call-to-action-holder.eltdf-two-halves-columns .eltdf-cta-button-holder {
+  width: 50%;
+}
+
+.eltdf-call-to-action-holder.eltdf-two-thirds-columns .eltdf-cta-text-holder {
+  width: 66.66666666666667%;
+}
+
+.eltdf-call-to-action-holder.eltdf-two-thirds-columns .eltdf-cta-button-holder {
+  width: 33.33333333333333%;
+}
+
+.eltdf-call-to-action-holder.eltdf-three-quarters-columns .eltdf-cta-text-holder {
+  width: 75%;
+}
+
+.eltdf-call-to-action-holder.eltdf-three-quarters-columns .eltdf-cta-button-holder {
+  width: 25%;
+}
+
+.eltdf-call-to-action-holder.eltdf-four-fifths-columns .eltdf-cta-text-holder {
+  width: 80%;
+}
+
+.eltdf-call-to-action-holder.eltdf-four-fifths-columns .eltdf-cta-button-holder {
+  width: 20%;
+}
+
+/* ==========================================================================
+   Call To Action shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Clients Carousel shortcode style - begin
+   ========================================================================== */
+.eltdf-clients-carousel-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  /***** Hover Types - begin *****/
+  /***** Hover Types - end *****/
+}
+
+.eltdf-clients-carousel-holder .eltdf-cc-inner {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.eltdf-clients-carousel-holder .eltdf-cc-item {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.touch .eltdf-clients-carousel-holder .eltdf-cc-item {
+  cursor: pointer;
+}
+
+.eltdf-clients-carousel-holder .eltdf-cc-item .eltdf-cc-item {
+  position: relative;
+  display: block;
+}
+
+.eltdf-clients-carousel-holder.eltdf-cc-hover-switch-images .eltdf-cc-item:hover .eltdf-cc-image {
+  opacity: 0;
+}
+
+.eltdf-clients-carousel-holder.eltdf-cc-hover-switch-images .eltdf-cc-item:hover .eltdf-cc-hover-image {
+  opacity: 1;
+}
+
+.eltdf-clients-carousel-holder.eltdf-cc-hover-switch-images .eltdf-cc-item .eltdf-cc-image {
+  position: relative;
+  display: block;
+  width: auto;
+  margin: 0 auto;
+  opacity: 1;
+}
+
+.eltdf-clients-carousel-holder.eltdf-cc-hover-switch-images .eltdf-cc-item .eltdf-cc-hover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  opacity: 0;
+  z-index: 100;
+}
+
+.eltdf-clients-carousel-holder.eltdf-cc-hover-roll-over .eltdf-cc-item {
+  overflow: hidden;
+}
+
+.eltdf-clients-carousel-holder.eltdf-cc-hover-roll-over .eltdf-cc-item:hover .eltdf-cc-image {
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+.eltdf-clients-carousel-holder.eltdf-cc-hover-roll-over .eltdf-cc-item:hover .eltdf-cc-hover-image {
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+
+.eltdf-clients-carousel-holder.eltdf-cc-hover-roll-over .eltdf-cc-item .eltdf-cc-image {
+  position: relative;
+  display: block;
+  width: auto;
+  margin: 0 auto;
+  -webkit-transition: -webkit-transform .4s ease;
+  -moz-transition: -moz-transform .4s ease;
+  transition: transform .4s ease;
+}
+
+.eltdf-clients-carousel-holder.eltdf-cc-hover-roll-over .eltdf-cc-item .eltdf-cc-hover-image {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: auto;
+  -webkit-transition: -webkit-transform .4s ease;
+  -moz-transition: -moz-transform .4s ease;
+  transition: transform .4s ease;
+  -webkit-transform: translate(-50%, -100%);
+  -moz-transform: translate(-50%, -100%);
+  transform: translate(-50%, -100%);
+}
+
+/* ==========================================================================
+   Clients Carousel shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Countdown shortcode style - begin
+   ========================================================================== */
+.eltdf-countdown {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.eltdf-countdown .countdown-rtl {
+  direction: rtl;
+}
+
+.eltdf-countdown .countdown-row {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  text-align: center;
+  clear: both;
+}
+
+.eltdf-countdown .countdown-row.countdown-show1 .countdown-section {
+  width: 100%;
+}
+
+.eltdf-countdown .countdown-row.countdown-show2 .countdown-section {
+  width: 50%;
+}
+
+.eltdf-countdown .countdown-row.countdown-show3 .countdown-section {
+  width: 33.33333333333333%;
+}
+
+.eltdf-countdown .countdown-row.countdown-show4 .countdown-section {
+  width: 25%;
+}
+
+.eltdf-countdown .countdown-row.countdown-show5 .countdown-section {
+  width: 20%;
+}
+
+.eltdf-countdown .countdown-row .countdown-section {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  padding: 0 5px;
+  box-sizing: border-box;
+}
+
+.eltdf-countdown .countdown-row .countdown-section .countdown-amount {
+  position: relative;
+  display: block;
+  color: #333333;
+  font-size: 75px;
+  line-height: 1em;
+  font-weight: 800;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 10px;
+}
+
+.eltdf-countdown .countdown-row .countdown-section .countdown-period {
+  display: block;
+  font-size: 17px;
+  font-weight: 800;
+  font-family: "Raleway", sans-serif;
+}
+
+.eltdf-countdown.eltdf-dark-skin .countdown-row .countdown-section .countdown-amount,
+.eltdf-countdown.eltdf-dark-skin .countdown-row .countdown-section .countdown-period {
+  color: #333333;
+}
+
+.eltdf-countdown.eltdf-light-skin .countdown-row .countdown-section .countdown-amount,
+.eltdf-countdown.eltdf-light-skin .countdown-row .countdown-section .countdown-period {
+  color: #fff;
+}
+
+/* ==========================================================================
+   Countdown shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Counter shortcode style - begin
+   ========================================================================== */
+.eltdf-counter-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in;
+  -moz-transition: opacity 0.2s ease-in;
+  transition: opacity 0.2s ease-in;
+}
+
+.eltdf-counter-holder .eltdf-counter-inner {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.eltdf-counter-holder .eltdf-counter {
+  height: 1.1em;
+  display: inline-block !important;
+  vertical-align: middle;
+  color: #333333;
+  font-size: 65px;
+  line-height: 1em;
+  font-weight: 800;
+  overflow: hidden;
+  font-family: "Raleway", sans-serif;
+}
+
+.eltdf-counter-holder .eltdf-counter-title {
+  margin: 18px 0 0;
+}
+
+.eltdf-counter-holder .eltdf-counter-text {
+  margin: 14px 0 0;
+}
+
+/* ==========================================================================
+   Counter shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Dropcaps shortcode style - begin
+   ========================================================================== */
+.eltdf-dropcaps {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  float: left;
+  line-height: 42px;
+  font-size: 42px;
+  color: #999;
+  font-weight: 300;
+  text-align: center;
+  margin: 0 7px 0 0;
+}
+
+.eltdf-dropcaps.eltdf-square, .eltdf-dropcaps.eltdf-circle {
+  height: 35px;
+  width: 35px;
+  font-size: 22px;
+  line-height: 35px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #333333;
+  margin: 6px 9px 0 0;
+  box-sizing: border-box;
+}
+
+.eltdf-dropcaps.eltdf-circle {
+  border-radius: 3em;
+}
+
+/* ==========================================================================
+   Dropcaps shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Elements Holder shortcode style - begin
+   ========================================================================== */
+.eltdf-elements-holder {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+}
+
+.eltdf-elements-holder .eltdf-eh-item.eltdf-width-1-1 {
+  width: 100%;
+}
+
+.eltdf-elements-holder .eltdf-eh-item.eltdf-width-1-2 {
+  width: 50%;
+}
+
+.eltdf-elements-holder .eltdf-eh-item.eltdf-width-1-3 {
+  width: 33.3333%;
+}
+
+.eltdf-elements-holder .eltdf-eh-item.eltdf-width-2-3 {
+  width: 66.6666%;
+}
+
+.eltdf-elements-holder .eltdf-eh-item.eltdf-width-1-4 {
+  width: 25%;
+}
+
+.eltdf-elements-holder .eltdf-eh-item.eltdf-width-3-4 {
+  width: 75%;
+}
+
+.eltdf-elements-holder .eltdf-eh-item.eltdf-width-1-5 {
+  width: 20%;
+}
+
+.eltdf-elements-holder .eltdf-eh-item.eltdf-width-2-5 {
+  width: 40%;
+}
+
+.eltdf-elements-holder .eltdf-eh-item.eltdf-width-3-5 {
+  width: 60%;
+}
+
+.eltdf-elements-holder .eltdf-eh-item.eltdf-width-4-5 {
+  width: 80%;
+}
+
+.eltdf-elements-holder .eltdf-eh-item.eltdf-width-1-6 {
+  width: 16.6666%;
+}
+
+.eltdf-elements-holder .eltdf-eh-item.eltdf-width-5-6 {
+  width: 83.3333%;
+}
+
+.eltdf-elements-holder .eltdf-eh-item {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.eltdf-elements-holder .eltdf-eh-item.eltdf-vertical-alignment-top {
+  vertical-align: top;
+}
+
+.eltdf-elements-holder .eltdf-eh-item.eltdf-vertical-alignment-bottom {
+  vertical-align: bottom;
+}
+
+.eltdf-elements-holder .eltdf-eh-item.eltdf-horizontal-alignment-center {
+  text-align: center;
+}
+
+.eltdf-elements-holder .eltdf-eh-item.eltdf-horizontal-alignment-right {
+  text-align: right;
+}
+
+.eltdf-elements-holder .eltdf-eh-item .eltdf-elements-holder-item-inner {
+  width: 100%;
+}
+
+.eltdf-elements-holder.eltdf-ehi-float.eltdf-three-columns .eltdf-eh-item {
+  width: 33.33333333333333%;
+}
+
+.eltdf-elements-holder.eltdf-ehi-float.eltdf-six-columns .eltdf-eh-item {
+  width: 16.66666666666667%;
+}
+
+.eltdf-elements-holder.eltdf-ehi-float .eltdf-eh-item {
+  float: left;
+}
+
+.eltdf-elements-holder .eltdf-ehi-content {
+  padding: 0 20px;
+}
+
+/* ==========================================================================
+   Elements Holder shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Frame Slider shortcode style - begin
+   ========================================================================== */
+.eltdf-frame-slider-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  padding: 65px 0 48px;
+}
+
+.eltdf-frame-slider-holder .eltdf-fs-phone {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  width: 100%;
+  background: url("img/frame-slider.png") top center no-repeat;
+  z-index: 2;
+  pointer-events: none;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.eltdf-frame-slider-holder .eltdf-fs-slides {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  cursor: -webkit-grab;
+  visibility: hidden;
+}
+
+.eltdf-frame-slider-holder .eltdf-fs-slides a, .eltdf-frame-slider-holder .eltdf-fs-slides img {
+  display: block;
+}
+
+/* ==========================================================================
+   Frame Slider shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Gallery Blocks shortcode style - begin
+   ========================================================================== */
+.eltdf-gallery-blocks-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.eltdf-gallery-blocks-holder .eltdf-gb-images .eltdf-gb-image {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+}
+
+.eltdf-gallery-blocks-holder .eltdf-gb-images .eltdf-gb-image.eltdf-gb-featured-image {
+  width: 100%;
+}
+
+.eltdf-gallery-blocks-holder .eltdf-gb-images a {
+  position: relative;
+  display: block;
+}
+
+.eltdf-gallery-blocks-holder .eltdf-gb-images a:after {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  content: '';
+  z-index: 1;
+  background-color: rgba(113, 203, 254, 0.7);
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.eltdf-gallery-blocks-holder .eltdf-gb-images a:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -19px 0 0 -19px;
+  content: '\4c';
+  font-family: 'ElegantIcons';
+  speak: none;
+  color: #fff;
+  font-size: 38px;
+  line-height: 1;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  -webkit-font-smoothing: antialiased;
+  z-index: 2;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.eltdf-gallery-blocks-holder .eltdf-gb-images a:hover:after, .eltdf-gallery-blocks-holder .eltdf-gb-images a:hover:before {
+  opacity: 1;
+}
+
+.eltdf-gallery-blocks-holder .eltdf-gb-images img {
+  display: block;
+}
+
+.eltdf-gallery-blocks-holder.eltdf-no-space {
+  margin: 0;
+}
+
+.eltdf-gallery-blocks-holder.eltdf-no-space .eltdf-gb-images {
+  margin: 0;
+}
+
+.eltdf-gallery-blocks-holder.eltdf-no-space .eltdf-gb-image {
+  padding: 0 0px;
+  margin: 0 0 0px;
+}
+
+.eltdf-gallery-blocks-holder.eltdf-tiny-space {
+  margin: 0 0 -10px;
+}
+
+.eltdf-gallery-blocks-holder.eltdf-tiny-space .eltdf-gb-images {
+  margin: 0 -5px;
+}
+
+.eltdf-gallery-blocks-holder.eltdf-tiny-space .eltdf-gb-image {
+  padding: 0 5px;
+  margin: 0 0 10px;
+}
+
+.eltdf-gallery-blocks-holder.eltdf-small-space {
+  margin: 0 0 -20px;
+}
+
+.eltdf-gallery-blocks-holder.eltdf-small-space .eltdf-gb-images {
+  margin: 0 -10px;
+}
+
+.eltdf-gallery-blocks-holder.eltdf-small-space .eltdf-gb-image {
+  padding: 0 10px;
+  margin: 0 0 20px;
+}
+
+.eltdf-gallery-blocks-holder.eltdf-normal-space {
+  margin: 0 0 -30px;
+}
+
+.eltdf-gallery-blocks-holder.eltdf-normal-space .eltdf-gb-images {
+  margin: 0 -15px;
+}
+
+.eltdf-gallery-blocks-holder.eltdf-normal-space .eltdf-gb-image {
+  padding: 0 15px;
+  margin: 0 0 30px;
+}
+
+/* ==========================================================================
+   Gallery Blocks shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Google Map shortcode style - begin
+   ========================================================================== */
+.eltdf-google-map-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.eltdf-google-map {
+  display: block;
+  width: 100%;
+  height: 300px;
+}
+
+.eltdf-google-map iframe,
+.eltdf-google-map object,
+.eltdf-google-map embed {
+  width: 100%;
+  display: block;
+}
+
+.eltdf-google-map img {
+  max-width: none;
+}
+
+.eltdf-google-map-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 1000;
+}
+
+/* ==========================================================================
+   Google Map shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Icon List Item shortcode style - begin
+   ========================================================================== */
+.eltdf-icon-list-holder {
+  position: relative;
+  display: table;
+  table-layout: fixed;
+  height: auto;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.eltdf-icon-list-holder .eltdf-il-icon-holder,
+.eltdf-icon-list-holder .eltdf-il-text {
+  position: relative;
+  display: table-cell;
+  vertical-align: top;
+}
+
+.eltdf-icon-list-holder .eltdf-il-icon-holder {
+  width: 1%;
+}
+
+.eltdf-icon-list-holder .eltdf-il-icon-holder > * {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  color: #333333;
+  font-size: 15px;
+  line-height: inherit;
+}
+
+.eltdf-icon-list-holder .eltdf-il-icon-holder > *:before {
+  display: block;
+  line-height: inherit;
+}
+
+.eltdf-icon-list-holder .eltdf-il-text {
+  width: 99%;
+  padding: 0 0 0 13px;
+  box-sizing: border-box;
+}
+
+/* ==========================================================================
+   Icon List Item shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Icon With Text shortcode style - begin
+   ========================================================================== */
+.eltdf-icon-with-text {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.eltdf-icon-with-text .eltdf-iwt-icon a {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  color: #969696;
+}
+
+.eltdf-icon-with-text .eltdf-iwt-icon .eltdf-icon-shortcode {
+  line-height: 1;
+}
+
+.eltdf-icon-with-text .eltdf-iwt-icon .eltdf-icon-shortcode.eltdf-circle, .eltdf-icon-with-text .eltdf-iwt-icon .eltdf-icon-shortcode.eltdf-square, .eltdf-icon-with-text .eltdf-iwt-icon .eltdf-icon-shortcode.eltdf-dropcaps.eltdf-circle {
+  line-height: 2;
+}
+
+.eltdf-icon-with-text .eltdf-iwt-title {
+  margin: 0;
+  line-height: 1.2em;
+}
+
+.eltdf-icon-with-text .eltdf-iwt-title a {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.eltdf-icon-with-text .eltdf-iwt-title-text {
+  display: block;
+}
+
+.eltdf-icon-with-text .eltdf-iwt-text {
+  margin: 14px 0 0;
+}
+
+.eltdf-icon-with-text.eltdf-iwt-icon-left {
+  width: auto;
+}
+
+.eltdf-icon-with-text.eltdf-iwt-icon-left .eltdf-iwt-icon,
+.eltdf-icon-with-text.eltdf-iwt-icon-left .eltdf-iwt-content {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.eltdf-icon-with-text.eltdf-iwt-icon-left .eltdf-iwt-icon {
+  position: relative;
+  top: 1px;
+}
+
+.eltdf-icon-with-text.eltdf-iwt-icon-left .eltdf-iwt-icon img {
+  max-width: none;
+}
+
+.eltdf-icon-with-text.eltdf-iwt-icon-left .eltdf-iwt-content {
+  padding: 0 0 0 13px;
+}
+
+.eltdf-icon-with-text.eltdf-iwt-icon-left-from-title .eltdf-iwt-icon,
+.eltdf-icon-with-text.eltdf-iwt-icon-left-from-title .eltdf-iwt-title-text {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.eltdf-icon-with-text.eltdf-iwt-icon-left-from-title .eltdf-iwt-icon .eltdf-icon-element {
+  -webkit-transition: none;
+  -moz-transition: none;
+  transition: none;
+}
+
+.eltdf-icon-with-text.eltdf-iwt-icon-left-from-title .eltdf-iwt-icon img {
+  max-width: none;
+}
+
+.eltdf-icon-with-text.eltdf-iwt-icon-left-from-title .eltdf-iwt-title-text {
+  padding: 0 0 0 17px;
+}
+
+.eltdf-icon-with-text.eltdf-iwt-icon-top {
+  text-align: center;
+}
+
+.eltdf-icon-with-text.eltdf-iwt-icon-top .eltdf-iwt-content {
+  padding: 23px 0 0;
+}
+
+.eltdf-icon-with-text.eltdf-iwt-with-custom-icon .eltdf-iwt-icon img {
+  -webkit-transition: all 0.35s cubic-bezier(0.38, 3, 0.57, 1.6);
+  -moz-transition: all 0.35s cubic-bezier(0.38, 3, 0.57, 1.6);
+  transition: all 0.35s cubic-bezier(0.38, 3, 0.57, 1.6);
+}
+
+.eltdf-icon-with-text.eltdf-iwt-with-custom-icon .eltdf-iwt-icon img.eltdf-animate {
+  -webkit-transform: translate3d(0, -6px, 0);
+  -moz-transform: translate3d(0, -6px, 0);
+  transform: translate3d(0, -6px, 0);
+}
+
+/* ==========================================================================
+   Icon With Text shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Icon shortcode style - begin
+   ========================================================================== */
+.eltdf-icon-shortcode {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.eltdf-icon-shortcode.eltdf-circle, .eltdf-icon-shortcode.eltdf-square, .eltdf-icon-shortcode.eltdf-dropcaps.eltdf-circle {
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  text-align: center;
+  background-color: #f6f6f6;
+  -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  -moz-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.eltdf-icon-shortcode.eltdf-circle a, .eltdf-icon-shortcode.eltdf-square a, .eltdf-icon-shortcode.eltdf-dropcaps.eltdf-circle a {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  height: 100%;
+}
+
+.eltdf-icon-shortcode.eltdf-circle .eltdf-icon-element, .eltdf-icon-shortcode.eltdf-square .eltdf-icon-element, .eltdf-icon-shortcode.eltdf-dropcaps.eltdf-circle .eltdf-icon-element {
+  color: #71cbfe;
+  line-height: inherit;
+}
+
+.eltdf-icon-shortcode.eltdf-circle {
+  border-radius: 50%;
+}
+
+.eltdf-icon-shortcode .eltdf-icon-element {
+  display: block;
+  line-height: inherit;
+}
+
+.eltdf-icon-shortcode .eltdf-icon-element:before {
+  display: block;
+  line-height: inherit;
+}
+
+.eltdf-icon-animation-holder {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: transform 0.15s ease-in-out;
+  -moz-transition: transform 0.15s ease-in-out;
+  transition: transform 0.15s ease-in-out;
+}
+
+.eltdf-icon-animation-holder.eltdf-icon-animation-show {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  transform: scale(1);
+}
+
+.eltdf-icon-tiny {
+  font-size: 1.33333333em;
+  line-height: .75em;
+  vertical-align: -15%;
+}
+
+.eltdf-icon-small {
+  font-size: 2em;
+}
+
+.eltdf-icon-medium {
+  font-size: 3em;
+}
+
+.eltdf-icon-large {
+  font-size: 4em;
+}
+
+.eltdf-icon-huge {
+  font-size: 5em;
+}
+
+/* ==========================================================================
+   Icon shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Image Gallery shortcode style - begin
+   ========================================================================== */
+.eltdf-image-gallery {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.eltdf-image-gallery .eltdf-ig-grid .eltdf-ig-image {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  float: left;
+  box-sizing: border-box;
+}
+
+.eltdf-image-gallery .eltdf-ig-grid .eltdf-ig-image a, .eltdf-image-gallery .eltdf-ig-grid .eltdf-ig-image img {
+  display: block;
+}
+
+.eltdf-image-gallery .eltdf-ig-grid .eltdf-ig-image a {
+  position: relative;
+}
+
+.eltdf-image-gallery .eltdf-ig-grid .eltdf-ig-image a:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -19px 0 0 -19px;
+  content: '\4c';
+  font-family: 'ElegantIcons';
+  speak: none;
+  color: #fff;
+  font-size: 38px;
+  line-height: 1;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  -webkit-font-smoothing: antialiased;
+  z-index: 2;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.eltdf-image-gallery .eltdf-ig-grid .eltdf-ig-image a:after {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  content: '';
+  background-color: rgba(113, 203, 254, 0.7);
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.eltdf-image-gallery .eltdf-ig-grid .eltdf-ig-image a:hover:before, .eltdf-image-gallery .eltdf-ig-grid .eltdf-ig-image a:hover:after {
+  opacity: 1;
+}
+
+.eltdf-image-gallery .eltdf-ig-grid.eltdf-ig-no-space {
+  margin: 0;
+}
+
+.eltdf-image-gallery .eltdf-ig-grid.eltdf-ig-no-space .eltdf-ig-image {
+  padding: 0 0px;
+  margin: 0 0 0px;
+}
+
+.eltdf-image-gallery .eltdf-ig-grid.eltdf-ig-tiny-space {
+  margin: 0 -5px;
+}
+
+.eltdf-image-gallery .eltdf-ig-grid.eltdf-ig-tiny-space .eltdf-ig-image {
+  padding: 0 5px;
+  margin: 0 0 10px;
+}
+
+.eltdf-image-gallery .eltdf-ig-grid.eltdf-ig-small-space {
+  margin: 0 -10px;
+}
+
+.eltdf-image-gallery .eltdf-ig-grid.eltdf-ig-small-space .eltdf-ig-image {
+  padding: 0 10px;
+  margin: 0 0 20px;
+}
+
+.eltdf-image-gallery .eltdf-ig-grid.eltdf-ig-normal-space {
+  margin: 0 -15px;
+}
+
+.eltdf-image-gallery .eltdf-ig-grid.eltdf-ig-normal-space .eltdf-ig-image {
+  padding: 0 15px;
+  margin: 0 0 30px;
+}
+
+.eltdf-image-gallery .eltdf-ig-grid.eltdf-ig-columns-2 .eltdf-ig-image {
+  width: 50%;
+}
+
+@media only screen and (min-width: 1025px) {
+  .eltdf-image-gallery .eltdf-ig-grid.eltdf-ig-columns-2 .eltdf-ig-image:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+.eltdf-image-gallery .eltdf-ig-grid.eltdf-ig-columns-3 .eltdf-ig-image {
+  width: 33.33333%;
+}
+
+@media only screen and (min-width: 1025px) {
+  .eltdf-image-gallery .eltdf-ig-grid.eltdf-ig-columns-3 .eltdf-ig-image:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+.eltdf-image-gallery .eltdf-ig-grid.eltdf-ig-columns-4 .eltdf-ig-image {
+  width: 25%;
+}
+
+@media only screen and (min-width: 1025px) {
+  .eltdf-image-gallery .eltdf-ig-grid.eltdf-ig-columns-4 .eltdf-ig-image:nth-child(4n+1) {
+    clear: both;
+  }
+}
+
+.eltdf-image-gallery .eltdf-ig-grid.eltdf-ig-columns-5 .eltdf-ig-image {
+  width: 20%;
+}
+
+@media only screen and (min-width: 1025px) {
+  .eltdf-image-gallery .eltdf-ig-grid.eltdf-ig-columns-5 .eltdf-ig-image:nth-child(5n+1) {
+    clear: both;
+  }
+}
+
+.eltdf-image-gallery .eltdf-ig-grid.eltdf-ig-columns-6 .eltdf-ig-image {
+  width: 16.66667%;
+}
+
+@media only screen and (min-width: 1025px) {
+  .eltdf-image-gallery .eltdf-ig-grid.eltdf-ig-columns-6 .eltdf-ig-image:nth-child(6n+1) {
+    clear: both;
+  }
+}
+
+.eltdf-image-gallery .eltdf-ig-grid.eltdf-ig-grayscale .eltdf-ig-image a:before, .eltdf-image-gallery .eltdf-ig-grid.eltdf-ig-grayscale .eltdf-ig-image a:after {
+  display: none;
+}
+
+.eltdf-image-gallery .eltdf-ig-grid.eltdf-ig-grayscale .eltdf-ig-image img {
+  filter: url("img/desaturate.svg#grayscale");
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: gray;
+  filter: grayscale(100%);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.touch .eltdf-image-gallery .eltdf-ig-grid.eltdf-ig-grayscale .eltdf-ig-image {
+  cursor: pointer;
+}
+
+.eltdf-image-gallery .eltdf-ig-grid.eltdf-ig-grayscale .eltdf-ig-image:hover img {
+  -webkit-filter: grayscale(0);
+  filter: none;
+}
+
+.eltdf-image-gallery .eltdf-ig-slider {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.eltdf-image-gallery .eltdf-ig-slider .owl-item a {
+  position: relative;
+  display: block;
+}
+
+.eltdf-image-gallery .eltdf-ig-slider .owl-item a img {
+  display: block;
+}
+
+.eltdf-image-gallery .eltdf-ig-slider .owl-item a:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -19px 0 0 -19px;
+  content: '\4c';
+  font-family: 'ElegantIcons';
+  speak: none;
+  color: #fff;
+  font-size: 38px;
+  line-height: 1;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  -webkit-font-smoothing: antialiased;
+  z-index: 2;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.eltdf-image-gallery .eltdf-ig-slider .owl-item a:after {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  content: '';
+  background-color: rgba(113, 203, 254, 0.7);
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.eltdf-image-gallery .eltdf-ig-slider .owl-item a:hover:before, .eltdf-image-gallery .eltdf-ig-slider .owl-item a:hover:after {
+  opacity: 1;
+}
+
+/* ==========================================================================
+   Image Gallery shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Image With Text shortcode style - begin
+   ========================================================================== */
+.eltdf-image-with-text-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  /***** Custom Link Behavior Style - begin *****/
+  /***** Custom Link Behavior Style - end *****/
+  /***** Lightbox Behavior Style - begin *****/
+  /***** Lightbox Behavior Style - end *****/
+  /***** Zoom Behavior Style - begin *****/
+  /***** Zoom Behavior Style - end *****/
+  /***** Grayscale Behavior Style - begin *****/
+  /***** Grayscale Behavior Style - end *****/
+}
+
+.eltdf-image-with-text-holder .eltdf-iwt-image {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.eltdf-image-with-text-holder .eltdf-iwt-image a, .eltdf-image-with-text-holder .eltdf-iwt-image img {
+  position: relative;
+  display: block;
+}
+
+.eltdf-image-with-text-holder .eltdf-iwt-text-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.eltdf-image-with-text-holder .eltdf-iwt-title {
+  margin: 32px 0 0;
+}
+
+.eltdf-image-with-text-holder .eltdf-iwt-text {
+  margin: 14px 0 0;
+}
+
+.eltdf-image-with-text-holder.eltdf-image-behavior-custom-link .eltdf-iwt-image a:hover:after {
+  opacity: 1;
+}
+
+.eltdf-image-with-text-holder.eltdf-image-behavior-custom-link .eltdf-iwt-image a:after {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  content: '';
+  background-color: rgba(51, 51, 51, 0.4);
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.eltdf-image-with-text-holder.eltdf-image-behavior-lightbox .eltdf-iwt-image a:hover:after {
+  opacity: 1;
+}
+
+.eltdf-image-with-text-holder.eltdf-image-behavior-lightbox .eltdf-iwt-image a:after {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  content: '';
+  background-color: rgba(51, 51, 51, 0.4);
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.eltdf-image-with-text-holder.eltdf-image-behavior-zoom .eltdf-iwt-image {
+  overflow: hidden;
+}
+
+.touch .eltdf-image-with-text-holder.eltdf-image-behavior-zoom .eltdf-iwt-image {
+  cursor: pointer;
+}
+
+.eltdf-image-with-text-holder.eltdf-image-behavior-zoom .eltdf-iwt-image:hover img {
+  -webkit-transform: scale(1.04);
+  -moz-transform: scale(1.04);
+  transform: scale(1.04);
+}
+
+.eltdf-image-with-text-holder.eltdf-image-behavior-zoom .eltdf-iwt-image img {
+  -webkit-transition: -webkit-transform .3s ease-in-out;
+  -moz-transition: -moz-transform .3s ease-in-out;
+  transition: transform .3s ease-in-out;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  transform: scale(1);
+}
+
+.eltdf-image-with-text-holder.eltdf-image-behavior-grayscale .eltdf-iwt-image {
+  overflow: hidden;
+}
+
+.touch .eltdf-image-with-text-holder.eltdf-image-behavior-grayscale .eltdf-iwt-image {
+  cursor: pointer;
+}
+
+.eltdf-image-with-text-holder.eltdf-image-behavior-grayscale .eltdf-iwt-image:hover img {
+  -webkit-filter: grayscale(0);
+  filter: none;
+}
+
+.eltdf-image-with-text-holder.eltdf-image-behavior-grayscale .eltdf-iwt-image img {
+  filter: url("img/desaturate.svg#grayscale");
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: gray;
+  filter: grayscale(100%);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/* ==========================================================================
+   Image With Text shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Info Box shortcode style - begin
+   ========================================================================== */
+.eltdf-info-box-holder {
+  position: relative;
+  z-index: 0;
+}
+
+.eltdf-info-box-holder > a {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.eltdf-info-box-holder.eltdf-hovered .eltdf-ib-color-holder {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition: all 0.35s cubic-bezier(0.38, 1.3, 0.57, 1.3) 0.1s;
+  -moz-transition: all 0.35s cubic-bezier(0.38, 1.3, 0.57, 1.3) 0.1s;
+  transition: all 0.35s cubic-bezier(0.38, 1.3, 0.57, 1.3) 0.1s;
+}
+
+.eltdf-info-box-holder.eltdf-hovered .eltdf-ib-icon {
+  opacity: 1;
+}
+
+.eltdf-info-box-holder .eltdf-ib-color-holder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.eltdf-info-box-holder .eltdf-ib-bckg-image-holder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.eltdf-info-box-holder .eltdf-ib-holder-table {
+  position: relative;
+  display: table;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+}
+
+.eltdf-info-box-holder .eltdf-ib-holder-table-cell {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: left;
+  padding: 110px 60px 130px;
+}
+
+.eltdf-info-box-holder .eltdf-ib-holder-inner {
+  text-align: left;
+}
+
+.eltdf-info-box-holder .eltdf-ib-holder-inner .eltdf-ib-icon {
+  opacity: 0;
+  -webkit-transition: opacity 0.1s ease-in-out;
+  -moz-transition: opacity 0.1s ease-in-out;
+  transition: opacity 0.1s ease-in-out;
+}
+
+.eltdf-info-box-holder .eltdf-ib-icon {
+  color: #71cbfe;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.eltdf-info-box-holder .eltdf-ib-title .eltdf-section-ital {
+  font-weight: 400;
+  font-style: italic;
+}
+
+.eltdf-info-box-holder.eltdf-ib-dark .eltdf-ib-color-holder {
+  background-color: #f6f6f6;
+}
+
+.eltdf-info-box-holder.eltdf-ib-dark .eltdf-ib-text {
+  color: #969696;
+}
+
+.eltdf-info-box-holder.eltdf-ib-light .eltdf-ib-color-holder {
+  background-color: #71cbfe;
+}
+
+.eltdf-info-box-holder.eltdf-ib-light .eltdf-ib-title,
+.eltdf-info-box-holder.eltdf-ib-light .eltdf-ib-text,
+.eltdf-info-box-holder.eltdf-ib-light .eltdf-ib-icon,
+.eltdf-info-box-holder.eltdf-ib-light .eltdf-btn {
+  color: #fff;
+}
+
+/* ==========================================================================
+   Info Box shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Interactive Image shortcode style - begin
+   ========================================================================== */
+.eltdf-interactive-image {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.eltdf-interactive-image .eltdf-ii-image-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  -webkit-box-shadow: 0px 3px 25px 0px rgba(0, 0, 0, 0.07);
+  box-shadow: 0px 3px 25px 0px rgba(0, 0, 0, 0.07);
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.eltdf-interactive-image .eltdf-ii-image-holder > a {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 200;
+}
+
+.eltdf-interactive-image .eltdf-ii-image-holder img {
+  vertical-align: middle;
+}
+
+.eltdf-interactive-image.eltdf-ii-with-title .eltdf-ii-image-holder-inner {
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.eltdf-interactive-image.eltdf-ii-with-title .eltdf-ii-title-holder {
+  position: absolute;
+  bottom: -27px;
+  right: 20px;
+  z-index: 100;
+  max-width: 50%;
+  background: #fff;
+  padding: 2px 48px;
+  -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1);
+  -webkit-transition: -webkit-box-shadow 0.2s ease, -webkit-transform 0.35s cubic-bezier(0.38, 1.6, 0.57, 1.6);
+  transition: box-shadow 0.2s ease, transform 0.35s cubic-bezier(0.38, 1.6, 0.57, 1.6);
+}
+
+.eltdf-interactive-image.eltdf-ii-with-title .eltdf-ii-title-holder > a {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.eltdf-interactive-image.eltdf-ii-with-title:hover .eltdf-ii-image-holder {
+  -webkit-box-shadow: 0px 7px 30px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 7px 30px 0px rgba(0, 0, 0, 0.2);
+}
+
+.eltdf-interactive-image.eltdf-ii-with-title:hover .eltdf-ii-image-holder .eltdf-ii-image-holder-inner {
+  -webkit-transform: scale(1.03);
+  -moz-transform: scale(1.03);
+  transform: scale(1.03);
+}
+
+.eltdf-interactive-image.eltdf-ii-with-title:hover .eltdf-ii-title-holder {
+  -webkit-transform: translate3d(0, -10px, 0);
+  -moz-transform: translate3d(0, -10px, 0);
+  transform: translate3d(0, -10px, 0);
+  -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
+}
+
+.eltdf-interactive-image.eltdf-ii-without-title .eltdf-ii-image-holder {
+  -webkit-transition: -webkit-box-shadow 0.2s ease, -webkit-transform 0.35s cubic-bezier(0.38, 1.6, 0.57, 1.6);
+  transition: box-shadow 0.2s ease, transform 0.35s cubic-bezier(0.38, 1.6, 0.57, 1.6);
+}
+
+.eltdf-interactive-image.eltdf-ii-without-title:hover .eltdf-ii-image-holder {
+  -webkit-transform: translate3d(0, -10px, 0);
+  -moz-transform: translate3d(0, -10px, 0);
+  transform: translate3d(0, -10px, 0);
+  -webkit-box-shadow: 0 12px 35px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 12px 35px 0 rgba(0, 0, 0, 0.15);
+}
+
+/* ==========================================================================
+   Interactive Image shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Item Showcase shortcode style - begin
+   ========================================================================== */
+.eltdf-item-showcase-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  text-align: center;
+  opacity: 0;
+}
+
+.eltdf-item-showcase-holder .eltdf-is-image {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  float: left;
+  width: 40%;
+  margin-top: -100px;
+  opacity: 0;
+  -webkit-transform: translateY(70px);
+  -moz-transform: translateY(70px);
+  transform: translateY(70px);
+}
+
+.eltdf-item-showcase-holder .eltdf-is-image.eltdf-appeared {
+  -webkit-transition: opacity 0.55s cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 0.55s cubic-bezier(0.23, 1, 0.32, 1);
+  -moz-transition: opacity 0.55s cubic-bezier(0.23, 1, 0.32, 1), -moz-transform 0.55s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: opacity 0.55s cubic-bezier(0.23, 1, 0.32, 1), transform 0.55s cubic-bezier(0.23, 1, 0.32, 1);
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.eltdf-item-showcase-holder .eltdf-is-item-holder {
+  display: inline-block;
+  vertical-align: middle;
+  width: 30%;
+}
+
+.eltdf-item-showcase-holder .eltdf-is-item-holder.eltdf-is-left-holder {
+  float: left;
+}
+
+.eltdf-item-showcase-holder .eltdf-is-item-holder.eltdf-is-right-holder {
+  float: right;
+}
+
+.eltdf-item-showcase-holder .eltdf-is-item-holder .eltdf-is-item:first-child {
+  margin: 0;
+}
+
+.eltdf-item-showcase-holder .eltdf-is-item {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 56px 0 0;
+  opacity: 0;
+}
+
+.eltdf-item-showcase-holder .eltdf-is-item.eltdf-is-left {
+  text-align: right;
+  -webkit-transform: translateX(-70px);
+  -moz-transform: translateX(-70px);
+  transform: translateX(-70px);
+}
+
+.eltdf-item-showcase-holder .eltdf-is-item.eltdf-is-left .eltdf-is-content {
+  padding: 0 20px 0 0;
+}
+
+.eltdf-item-showcase-holder .eltdf-is-item.eltdf-is-right {
+  text-align: left;
+  -webkit-transform: translateX(70px);
+  -moz-transform: translateX(70px);
+  transform: translateX(70px);
+}
+
+.eltdf-item-showcase-holder .eltdf-is-item.eltdf-is-right .eltdf-is-content {
+  padding: 0 0 0 20px;
+}
+
+.eltdf-item-showcase-holder .eltdf-is-item.eltdf-appeared {
+  -webkit-transition: opacity 0.55s cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 0.55s cubic-bezier(0.23, 1, 0.32, 1);
+  -moz-transition: opacity 0.55s cubic-bezier(0.23, 1, 0.32, 1), -moz-transform 0.55s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: opacity 0.55s cubic-bezier(0.23, 1, 0.32, 1), transform 0.55s cubic-bezier(0.23, 1, 0.32, 1);
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.eltdf-item-showcase-holder .eltdf-is-item .eltdf-is-content {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.eltdf-item-showcase-holder .eltdf-is-item .eltdf-is-title {
+  margin: 0;
+}
+
+.eltdf-item-showcase-holder .eltdf-is-item .eltdf-is-text {
+  margin: 14px 0 0;
+}
+
+/* ==========================================================================
+   Item Showcase shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Parallax shortcode style - begin
+   ========================================================================== */
+.eltdf-parallax-holder {
+  position: static;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-position: center 0;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.eltdf-parallax-holder.eltdf-vertical-middle-align {
+  display: table;
+  width: 100%;
+}
+
+.eltdf-parallax-holder.eltdf-vertical-middle-align .eltdf-parallax-inner {
+  display: table-cell;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.touch .eltdf-parallax-holder.eltdf-disabled-parallax-on-touch {
+  height: auto !important;
+  min-height: 200px !important;
+  background-position: center top !important;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.eltdf-parallax-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.eltdf-parallax-container > .eltdf-parallax-image-frame {
+  position: absolute;
+  overflow: hidden;
+}
+
+.eltdf-parallax-container > .eltdf-parallax-image-frame > .eltdf-parallax-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 2000px;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  -moz-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+}
+
+/* ==========================================================================
+   Parallax shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Pie Chart shortcode style - begin
+   ========================================================================== */
+.eltdf-pie-chart-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in;
+  -moz-transition: opacity 0.2s ease-in;
+  transition: opacity 0.2s ease-in;
+}
+
+.eltdf-pie-chart-holder .eltdf-pc-percentage {
+  position: relative;
+  display: block;
+  height: 176px;
+  width: 176px;
+  line-height: 176px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.eltdf-pie-chart-holder .eltdf-pc-percentage canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.eltdf-pie-chart-holder .eltdf-pc-percentage .eltdf-pc-percent {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  color: #333333;
+  font-family: "Raleway", sans-serif;
+  font-size: 42px;
+  line-height: inherit;
+  font-weight: 800;
+}
+
+.eltdf-pie-chart-holder .eltdf-pc-percentage .eltdf-pc-percent:after {
+  position: relative;
+  top: -15px;
+  content: '%';
+  font-size: 20px;
+}
+
+.eltdf-pie-chart-holder .eltdf-pc-text-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  text-align: center;
+  margin: 30px 0 0;
+}
+
+.eltdf-pie-chart-holder .eltdf-pc-text-holder .eltdf-pc-title {
+  margin: 0;
+}
+
+.eltdf-pie-chart-holder .eltdf-pc-text-holder .eltdf-pc-text {
+  margin: 14px 0 0;
+}
+
+/* ==========================================================================
+   Pie Chart shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Pricing Tables shortcode style - begin
+   ========================================================================== */
+.eltdf-pricing-tables {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  clear: both;
+}
+
+.eltdf-pricing-tables .eltdf-pt-wrapper {
+  position: relative;
+}
+
+.eltdf-pricing-tables.eltdf-pt-no-space .eltdf-pt-wrapper {
+  margin: 0;
+}
+
+.eltdf-pricing-tables.eltdf-pt-no-space .eltdf-price-table {
+  padding: 0 0px;
+  margin: 0 0 0px;
+}
+
+.eltdf-pricing-tables.eltdf-pt-tiny-space .eltdf-pt-wrapper {
+  margin: 0 -5px;
+}
+
+.eltdf-pricing-tables.eltdf-pt-tiny-space .eltdf-price-table {
+  padding: 0 5px;
+  margin: 0 0 10px;
+}
+
+.eltdf-pricing-tables.eltdf-pt-small-space .eltdf-pt-wrapper {
+  margin: 0 -10px;
+}
+
+.eltdf-pricing-tables.eltdf-pt-small-space .eltdf-price-table {
+  padding: 0 10px;
+  margin: 0 0 20px;
+}
+
+.eltdf-pricing-tables.eltdf-pt-normal-space .eltdf-pt-wrapper {
+  margin: 0 -15px;
+}
+
+.eltdf-pricing-tables.eltdf-pt-normal-space .eltdf-price-table {
+  padding: 0 15px;
+  margin: 0 0 30px;
+}
+
+.eltdf-pricing-tables.eltdf-two-columns .eltdf-price-table {
+  width: 50%;
+}
+
+.eltdf-pricing-tables.eltdf-three-columns .eltdf-price-table {
+  width: 33.33333%;
+}
+
+.eltdf-pricing-tables.eltdf-four-columns .eltdf-price-table {
+  width: 25%;
+}
+
+.eltdf-pricing-tables.eltdf-five-columns .eltdf-price-table {
+  width: 20%;
+}
+
+.eltdf-price-table {
+  position: relative;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  float: left;
+  box-sizing: border-box;
+}
+
+.eltdf-price-table .eltdf-pt-inner {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  background-color: #f6f6f6;
+  background-position: center;
+  background-size: cover;
+}
+
+.eltdf-price-table .eltdf-pt-inner ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.eltdf-price-table .eltdf-pt-inner ul li {
+  margin: 0;
+  padding: 17px 30px;
+  text-align: center;
+}
+
+.eltdf-price-table .eltdf-pt-inner ul li.eltdf-pt-title-holder {
+  position: relative;
+}
+
+.eltdf-price-table .eltdf-pt-inner ul li.eltdf-pt-title-holder .eltdf-pt-title {
+  display: block;
+  margin: 0;
+}
+
+.eltdf-price-table .eltdf-pt-inner ul li.eltdf-pt-title-holder .eltdf-separator {
+  width: 27px;
+  border-bottom: 4px solid #333333;
+  margin: 19px 0 5px;
+}
+
+.eltdf-price-table .eltdf-pt-inner ul li.eltdf-pt-prices {
+  position: relative;
+  color: #333333;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  padding: 67px 15px 0;
+}
+
+.eltdf-price-table .eltdf-pt-inner ul li.eltdf-pt-prices .eltdf-pt-value {
+  position: relative;
+  vertical-align: super;
+  bottom: -6px;
+  font-size: 33px;
+  line-height: 1em;
+}
+
+.eltdf-price-table .eltdf-pt-inner ul li.eltdf-pt-prices .eltdf-pt-price {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  left: -2px;
+  font-size: 75px;
+  line-height: 1em;
+}
+
+.eltdf-price-table .eltdf-pt-inner ul li.eltdf-pt-prices .eltdf-pt-mark {
+  position: relative;
+  display: block;
+  margin: 1px 0 0;
+}
+
+.eltdf-price-table .eltdf-pt-inner ul li.eltdf-pt-content {
+  color: #333333;
+  padding: 0 15px;
+}
+
+.eltdf-price-table .eltdf-pt-inner ul li.eltdf-pt-content li {
+  padding: 6px;
+}
+
+.eltdf-price-table .eltdf-pt-inner ul li.eltdf-pt-content li:before {
+  content: '\4e';
+  font-family: ElegantIcons;
+  font-size: 20px;
+  color: inherit;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.eltdf-price-table .eltdf-pt-inner ul li.eltdf-pt-button {
+  padding: 25px 15px 79px;
+}
+
+.eltdf-price-table .eltdf-pt-inner ul li.eltdf-pt-button .eltdf-btn.eltdf-pt-btn-hover-white:hover {
+  color: #333 !important;
+  background-color: #fff !important;
+}
+
+.eltdf-price-table .eltdf-pt-inner.eltdf-pt-dark {
+  background-color: #f6f6f6;
+}
+
+.eltdf-price-table .eltdf-pt-inner.eltdf-pt-dark ul li.eltdf-pt-prices, .eltdf-price-table .eltdf-pt-inner.eltdf-pt-dark ul li.eltdf-separator, .eltdf-price-table .eltdf-pt-inner.eltdf-pt-dark ul li.eltdf-pt-content,
+.eltdf-price-table .eltdf-pt-inner.eltdf-pt-dark ul li .eltdf-pt-title {
+  color: #333;
+}
+
+.eltdf-price-table .eltdf-pt-inner.eltdf-pt-dark ul li .eltdf-separator {
+  border-bottom-color: #333;
+}
+
+.eltdf-price-table .eltdf-pt-inner.eltdf-pt-dark ul li .eltdf-btn.eltdf-btn-solid {
+  color: #fff;
+  background-color: #333;
+}
+
+.eltdf-price-table .eltdf-pt-inner.eltdf-pt-light {
+  background-color: #333;
+}
+
+.eltdf-price-table .eltdf-pt-inner.eltdf-pt-light ul li.eltdf-pt-prices, .eltdf-price-table .eltdf-pt-inner.eltdf-pt-light ul li.eltdf-separator, .eltdf-price-table .eltdf-pt-inner.eltdf-pt-light ul li.eltdf-pt-content,
+.eltdf-price-table .eltdf-pt-inner.eltdf-pt-light ul li .eltdf-pt-title {
+  color: #fff;
+}
+
+.eltdf-price-table .eltdf-pt-inner.eltdf-pt-light ul li .eltdf-separator {
+  border-bottom-color: #fff;
+}
+
+.eltdf-price-table .eltdf-pt-inner.eltdf-pt-light ul li .eltdf-btn.eltdf-btn-solid {
+  color: #333;
+  background-color: #fff;
+}
+
+.eltdf-price-table .eltdf-pt-inner.eltdf-pt-light ul li .eltdf-btn.eltdf-btn-solid:hover {
+  color: #333 !important;
+  background-color: #f6f6f6 !important;
+  border-color: #f6f6f6 !important;
+}
+
+/* ==========================================================================
+   Pricing Tables shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Process shortcode style - begin
+   ========================================================================== */
+.eltdf-processes-holder {
+  height: 100%;
+  position: relative;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  padding-top: 30px;
+}
+
+.eltdf-processes-holder .eltdf-process {
+  position: relative;
+  display: table-cell;
+  text-align: center;
+  vertical-align: top;
+  width: 15%;
+}
+
+.eltdf-processes-holder .eltdf-process:nth-child(odd) {
+  padding-top: 16%;
+}
+
+.eltdf-processes-holder .eltdf-process:nth-child(odd) .eltdf-process-content-wrapper .eltdf-process-content-wrapper-inner:after {
+  top: 16%;
+  left: 34%;
+  -webkit-transform: rotate(135deg) translate(-50%, 0);
+  -moz-transform: rotate(135deg) translate(-50%, 0);
+  transform: rotate(135deg) translate(-50%, 0);
+}
+
+.eltdf-processes-holder .eltdf-process:nth-child(even) .eltdf-process-content-wrapper .eltdf-process-content-wrapper-inner:after {
+  bottom: 16%;
+  left: 34%;
+  top: auto;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.eltdf-processes-holder .eltdf-process:first-child {
+  width: 13.85%;
+}
+
+.eltdf-processes-holder .eltdf-process:first-child .eltdf-process-content-wrapper {
+  width: 92%;
+  padding-top: 92%;
+}
+
+.eltdf-processes-holder .eltdf-process:nth-child(2) {
+  width: 21.3%;
+}
+
+.eltdf-processes-holder .eltdf-process:nth-child(2) .eltdf-process-content-wrapper {
+  width: 76%;
+  padding-top: 76%;
+}
+
+.eltdf-processes-holder .eltdf-process:nth-child(2) .eltdf-process-content-wrapper .eltdf-process-content-wrapper-inner:after {
+  bottom: -32%;
+  left: 52%;
+  top: auto;
+  width: 150%;
+  -webkit-transform: rotate(52deg);
+  -moz-transform: rotate(52deg);
+  transform: rotate(52deg);
+}
+
+.eltdf-processes-holder .eltdf-process:nth-child(3) {
+  width: 19.6%;
+  padding-top: 23%;
+}
+
+.eltdf-processes-holder .eltdf-process:nth-child(3) .eltdf-process-content-wrapper {
+  width: 65%;
+  padding-top: 65%;
+}
+
+.eltdf-processes-holder .eltdf-process:nth-child(4) {
+  width: 27.69%;
+}
+
+.eltdf-processes-holder .eltdf-process:nth-child(4) .eltdf-process-content-wrapper {
+  width: 77%;
+  padding-top: 77%;
+}
+
+.eltdf-processes-holder .eltdf-process:nth-child(5) {
+  width: 17.4%;
+}
+
+.eltdf-processes-holder .eltdf-process:nth-child(5) .eltdf-process-content-wrapper {
+  width: 92%;
+  padding-top: 92%;
+}
+
+.eltdf-processes-holder .eltdf-process:last-child .eltdf-process-content-wrapper .eltdf-process-content-wrapper-inner:after {
+  display: none;
+}
+
+.eltdf-processes-holder .eltdf-process .eltdf-process-text-holder {
+  position: relative;
+  margin-top: 31px;
+}
+
+.eltdf-processes-holder .eltdf-process:hover .eltdf-process-link ~ .eltdf-process-bgrnd {
+  opacity: 1;
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  transform: scale(1.02);
+  -webkit-transition: -webkit-transform .2s .1s, opacity .15s ease-out .1s;
+  transition: transform .2s .1s, opacity .15s ease-out .1s;
+}
+
+.eltdf-processes-holder .eltdf-process.eltdf-process-color-hover .eltdf-process-inner-text,
+.eltdf-processes-holder .eltdf-process.eltdf-process-color-hover .eltdf-process-content-holder {
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.eltdf-processes-holder .eltdf-process.eltdf-process-color-hover .eltdf-process-inner-text .eltdf-process-content-overlay,
+.eltdf-processes-holder .eltdf-process.eltdf-process-color-hover .eltdf-process-content-holder .eltdf-process-content-overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0;
+  -webkit-transform: scale(0.6);
+  -moz-transform: scale(0.6);
+  transform: scale(0.6);
+  -webkit-transition: opacity .15s ease-out, -webkit-transform .0s .2s;
+  transition: opacity .15s ease-out, transform .0s .2s;
+}
+
+.eltdf-processes-holder .eltdf-process.eltdf-process-color-hover:hover .eltdf-process-content-overlay {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.eltdf-processes-holder .eltdf-process-content-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+  margin: auto;
+}
+
+.eltdf-processes-holder .eltdf-process-content-wrapper .eltdf-process-content-wrapper-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.eltdf-processes-holder .eltdf-process-content-wrapper .eltdf-process-content-wrapper-inner:after {
+  content: '';
+  position: absolute;
+  width: 115%;
+  height: 0;
+  border: 2px dashed #71cbfe;
+  z-index: -5;
+}
+
+.eltdf-processes-holder .eltdf-process-content-holder {
+  background-color: #f6f6f6;
+  border-radius: 50%;
+  position: relative;
+  display: table;
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.eltdf-processes-holder .eltdf-process-content-holder .eltdf-process-content-holder-inner {
+  display: inline-block;
+  position: absolute;
+  left: 6%;
+  top: 6%;
+  z-index: 10;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.eltdf-processes-holder .eltdf-process-content-holder .eltdf-process-content-holder-inner .eltdf-process-inner-text {
+  color: #444;
+  font-size: 70px;
+  font-weight: bold;
+}
+
+.eltdf-processes-holder .eltdf-process-bgrnd {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  z-index: 5;
+  opacity: 0;
+  -webkit-transform: scale(0.3);
+  -moz-transform: scale(0.3);
+  transform: scale(0.3);
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  -webkit-transition: -webkit-transform .0s .2s, opacity .15s ease-out;
+  transition: transform .0s .2s, opacity .15s ease-out;
+}
+
+.eltdf-processes-holder .eltdf-process-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+}
+
+.eltdf-processes-holder .eltdf-process-inner-text {
+  font-family: "Raleway", sans-serif;
+  font-size: 48px;
+  z-index: 999;
+  line-height: 1em;
+  font-weight: 500;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  top: 4px;
+}
+
+.eltdf-processes-holder .eltdf-process-title {
+  margin: 0 0 12px;
+}
+
+.eltdf-processes-holder .eltdf-process-text {
+  font-size: 15px;
+  color: #8f8f8f;
+  margin: 0;
+  padding: 0 10px;
+}
+
+.eltdf-processes-holder.eltdf-process-light .eltdf-process .eltdf-process-inner-text,
+.eltdf-processes-holder.eltdf-process-light .eltdf-process .eltdf-process-title,
+.eltdf-processes-holder.eltdf-process-light .eltdf-process .eltdf-process-text {
+  color: #fff;
+}
+
+.eltdf-processes-holder.eltdf-loading-animation-yes .eltdf-process {
+  visibility: hidden;
+}
+
+.no-touch .eltdf-processes-holder.eltdf-loading-animation-yes .eltdf-process .eltdf-process-content-holder {
+  opacity: 0;
+  -webkit-transform: scale(0.6);
+  -moz-transform: scale(0.6);
+  transform: scale(0.6);
+}
+
+.no-touch .eltdf-processes-holder.eltdf-loading-animation-yes .eltdf-process .eltdf-process-content-holder .eltdf-process-inner-text {
+  opacity: 0;
+}
+
+.no-touch .eltdf-processes-holder.eltdf-loading-animation-yes .eltdf-process .eltdf-process-text-holder {
+  opacity: 0;
+  -webkit-transform: translate3d(0, 40px, 0);
+  -moz-transform: translate3d(0, 40px, 0);
+  transform: translate3d(0, 40px, 0);
+}
+
+.no-touch .eltdf-processes-holder.eltdf-loading-animation-yes .eltdf-process .eltdf-process-content-wrapper-inner:after {
+  opacity: 0;
+  -webkit-backface-visibility: hidden;
+}
+
+.no-touch .eltdf-processes-holder.eltdf-loading-animation-yes .eltdf-process.eltdf-item-loaded {
+  visibility: visible;
+}
+
+.no-touch .eltdf-processes-holder.eltdf-loading-animation-yes .eltdf-process.eltdf-item-loaded .eltdf-process-content-holder {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.35s cubic-bezier(0.38, 1.1, 0.57, 1.16);
+  -moz-transition: all 0.35s cubic-bezier(0.38, 1.1, 0.57, 1.16);
+  transition: all 0.35s cubic-bezier(0.38, 1.1, 0.57, 1.16);
+}
+
+.no-touch .eltdf-processes-holder.eltdf-loading-animation-yes .eltdf-process.eltdf-item-loaded .eltdf-process-content-holder .eltdf-process-inner-text {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s 0.35s;
+  -moz-transition: opacity 0.3s 0.35s;
+  transition: opacity 0.3s 0.35s;
+}
+
+.no-touch .eltdf-processes-holder.eltdf-loading-animation-yes .eltdf-process.eltdf-item-loaded .eltdf-process-text-holder {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: all 0.45s cubic-bezier(0.38, 1, 0.57, 1);
+  -moz-transition: all 0.45s cubic-bezier(0.38, 1, 0.57, 1);
+  transition: all 0.45s cubic-bezier(0.38, 1, 0.57, 1);
+}
+
+.no-touch .eltdf-processes-holder.eltdf-loading-animation-yes .eltdf-process.eltdf-item-loaded .eltdf-process-content-wrapper-inner:after {
+  opacity: 1;
+  -webkit-transition: opacity 0.4s 0.5s;
+  -moz-transition: opacity 0.4s 0.5s;
+  transition: opacity 0.4s 0.5s;
+}
+
+.touch .eltdf-processes-holder.eltdf-loading-animation-yes .eltdf-process {
+  visibility: visible;
+}
+
+/* ==========================================================================
+   Process shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Progress Bar shortcode style - begin
+   ========================================================================== */
+.eltdf-progress-bar {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.eltdf-progress-bar .eltdf-pb-title-holder {
+  position: relative;
+  text-align: left;
+  margin: 10px 0 13px;
+}
+
+.eltdf-progress-bar .eltdf-pb-title-holder .eltdf-pb-title {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  z-index: 100;
+}
+
+.eltdf-progress-bar .eltdf-pb-percent {
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+  opacity: 0;
+  z-index: 10;
+  font-size: 30px;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.eltdf-progress-bar .eltdf-pb-percent:after {
+  content: '%';
+  font-size: 15px;
+  top: -7px;
+  position: relative;
+}
+
+.eltdf-progress-bar .eltdf-pb-content-holder {
+  position: relative;
+  height: 20px;
+  overflow: hidden;
+  background-color: #f6f6f6;
+}
+
+.eltdf-progress-bar .eltdf-pb-content-holder .eltdf-pb-content {
+  height: 20px;
+  max-width: 100%;
+  overflow: hidden;
+  background-color: #71cbfe;
+}
+
+.eltdf-progress-bar.eltdf-progress-vertical {
+  width: 130px;
+  max-width: 100%;
+  margin-right: 30px;
+}
+
+.eltdf-progress-bar.eltdf-progress-vertical:last-child {
+  margin-right: 0;
+}
+
+.eltdf-progress-bar.eltdf-progress-vertical .eltdf-pb-content-holder {
+  height: 200px;
+}
+
+.eltdf-progress-bar.eltdf-progress-vertical .eltdf-pb-content-holder .eltdf-pb-content {
+  width: 130px;
+  position: absolute;
+  bottom: 0;
+}
+
+.eltdf-progress-bar.eltdf-progress-vertical .eltdf-pb-title-holder {
+  margin-top: 30px;
+}
+
+.eltdf-progress-bar.eltdf-progress-vertical .eltdf-pb-percent {
+  font-size: 23px;
+}
+
+.eltdf-progress-bar.eltdf-progress-vertical .eltdf-pb-percent,
+.eltdf-progress-bar.eltdf-progress-vertical .eltdf-pb-title {
+  position: relative;
+  display: block;
+  -webkit-transform: none;
+  -moz-transform: none;
+  transform: none;
+}
+
+/* ==========================================================================
+   Progress Bar shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Section Title shortcode styles - begin
+   ========================================================================== */
+.eltdf-section-title-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 680px) {
+  .eltdf-section-title-holder {
+    padding: 0 !important;
+  }
+}
+
+.eltdf-section-title-holder .eltdf-st-title {
+  display: block;
+  margin: 0;
+}
+
+.eltdf-section-title-holder .eltdf-st-title .eltdf-section-ital {
+  font-style: italic;
+  font-weight: 400;
+}
+
+.eltdf-section-title-holder .eltdf-st-text {
+  display: block;
+  margin: 14px 0 0;
+}
+
+.eltdf-section-title-holder .eltdf-section-subtitle {
+  font-size: 20px;
+  color: #888888;
+  font-weight: 400;
+  margin-bottom: 11px;
+}
+
+.eltdf-section-title-holder .eltdf-title-separator {
+  width: 27px;
+  height: 5px;
+  background-color: #333;
+  display: none;
+  margin-bottom: 14px;
+  margin-top: 26px;
+}
+
+.eltdf-section-title-holder .eltdf-title-separator.eltdf-enable-separator {
+  display: inline-block;
+}
+
+/* ==========================================================================
+   Section Title shortcode styles - end
+   ========================================================================== */
+/* ==========================================================================
+   Separator shortcode style - begin
+   ========================================================================== */
+.eltdf-separator-holder {
+  position: relative;
+  height: auto;
+  font-size: 0;
+  line-height: 1em;
+}
+
+.eltdf-separator-holder.eltdf-separator-center {
+  text-align: center;
+}
+
+.eltdf-separator-holder.eltdf-separator-left {
+  text-align: left;
+}
+
+.eltdf-separator-holder.eltdf-separator-right {
+  text-align: right;
+}
+
+.eltdf-separator-holder.eltdf-separator-full-width .eltdf-separator {
+  width: 100% !important;
+}
+
+.eltdf-separator {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  border-bottom: 1px solid #ebebeb;
+  margin: 10px 0;
+}
+
+/* ==========================================================================
+   Separator shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Social Share shortcode style - begin
+   ========================================================================== */
+.eltdf-social-share-holder {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+}
+
+.eltdf-social-share-holder ul {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* List type - begin
+========================================================================== */
+.eltdf-social-share-holder.eltdf-list .eltdf-social-title {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  color: #969696;
+  font-weight: 600;
+}
+
+.eltdf-social-share-holder.eltdf-list li {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0;
+  margin: 0 17px 3px 0;
+}
+
+.eltdf-social-share-holder.eltdf-list li:last-child {
+  margin: 0 0 3px;
+}
+
+.eltdf-social-share-holder.eltdf-list li a {
+  font-size: 18px;
+}
+
+/* List type - end
+========================================================================== */
+/* Dropdown type - begin
+========================================================================== */
+.eltdf-social-share-holder.eltdf-dropdown {
+  position: relative;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.eltdf-social-share-holder.eltdf-dropdown .eltdf-social-share-dropdown-opener {
+  display: block;
+  color: #969696;
+}
+
+.eltdf-social-share-holder.eltdf-dropdown .eltdf-social-share-dropdown-opener .eltdf-social-share-title {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 5px;
+}
+
+.eltdf-social-share-holder.eltdf-dropdown .eltdf-social-share-dropdown-opener .social_share {
+  font-size: 12px;
+  color: #333333;
+}
+
+.eltdf-social-share-holder.eltdf-dropdown .eltdf-social-share-dropdown-opener:hover {
+  color: #71cbfe;
+}
+
+.eltdf-social-share-holder.eltdf-dropdown .eltdf-social-share-dropdown-opener:hover .social_share {
+  color: inherit;
+}
+
+.eltdf-social-share-holder.eltdf-dropdown .eltdf-social-share-dropdown {
+  position: relative;
+  visibility: hidden;
+  z-index: 950;
+}
+
+.eltdf-social-share-holder.eltdf-dropdown .eltdf-social-share-dropdown ul {
+  position: relative;
+  display: block;
+  z-index: 990;
+  margin: 0;
+  padding: 0 !important;
+  top: 3px;
+}
+
+.eltdf-social-share-holder.eltdf-dropdown .eltdf-social-share-dropdown ul li {
+  width: 88px;
+  height: 28px;
+  line-height: 28px;
+  visibility: hidden;
+  position: absolute;
+  text-align: center;
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #e1e1e1;
+  background-color: #fff;
+  font-size: 12px;
+  color: #969696;
+  box-sizing: border-box;
+  -webkit-transition: opacity 0.2s ease-out 0s, visibility 0.2s ease-out 0s, background-color 0.2s ease-out 0s;
+  -moz-transition: opacity 0.2s ease-out 0s, visibility 0.2s ease-out 0s, background-color 0.2s ease-out 0s;
+  transition: opacity 0.2s ease-out 0s, visibility 0.2s ease-out 0s, background-color 0.2s ease-out 0s;
+}
+
+.eltdf-social-share-holder.eltdf-dropdown .eltdf-social-share-dropdown ul li.eltdf-facebook-share:hover {
+  background-color: #3b5998;
+  color: #fff;
+}
+
+.eltdf-social-share-holder.eltdf-dropdown .eltdf-social-share-dropdown ul li.eltdf-twitter-share:hover {
+  background-color: #00aced;
+  color: #fff;
+}
+
+.eltdf-social-share-holder.eltdf-dropdown .eltdf-social-share-dropdown ul li.eltdf-google_plus-share:hover {
+  background-color: #dd4b39;
+  color: #fff;
+}
+
+.eltdf-social-share-holder.eltdf-dropdown .eltdf-social-share-dropdown ul li.eltdf-linkedin-share:hover {
+  background-color: #007bb5;
+  color: #fff;
+}
+
+.eltdf-social-share-holder.eltdf-dropdown .eltdf-social-share-dropdown ul li.eltdf-tumblr-share:hover {
+  background-color: #32506d;
+  color: #fff;
+}
+
+.eltdf-social-share-holder.eltdf-dropdown .eltdf-social-share-dropdown ul li.eltdf-pinterest-share:hover {
+  background-color: #cb2027;
+  color: #fff;
+}
+
+.eltdf-social-share-holder.eltdf-dropdown .eltdf-social-share-dropdown ul li.eltdf-vk-share:hover {
+  background-color: #45668e;
+  color: #fff;
+}
+
+.eltdf-social-share-holder.eltdf-dropdown .eltdf-social-share-dropdown ul li:not(:first-child) {
+  border-top: none;
+}
+
+.eltdf-social-share-holder.eltdf-dropdown .eltdf-social-share-dropdown ul li a {
+  display: block;
+  color: inherit !important;
+}
+
+.eltdf-social-share-holder.eltdf-dropdown .eltdf-social-share-dropdown ul li a span {
+  display: block;
+  line-height: inherit;
+}
+
+.eltdf-social-share-holder.eltdf-dropdown .eltdf-social-share-dropdown ul li:nth-child(1) {
+  bottom: -29px;
+}
+
+.eltdf-social-share-holder.eltdf-dropdown .eltdf-social-share-dropdown ul li:nth-child(2) {
+  bottom: -58px;
+}
+
+.eltdf-social-share-holder.eltdf-dropdown .eltdf-social-share-dropdown ul li:nth-child(3) {
+  bottom: -87px;
+}
+
+.eltdf-social-share-holder.eltdf-dropdown .eltdf-social-share-dropdown ul li:nth-child(4) {
+  bottom: -116px;
+}
+
+.eltdf-social-share-holder.eltdf-dropdown .eltdf-social-share-dropdown ul li:nth-child(5) {
+  bottom: -145px;
+}
+
+.eltdf-social-share-holder.eltdf-dropdown .eltdf-social-share-dropdown ul li:nth-child(6) {
+  bottom: -174px;
+}
+
+.eltdf-social-share-holder.eltdf-dropdown .eltdf-social-share-dropdown ul li:nth-child(7) {
+  bottom: -203px;
+}
+
+.eltdf-social-share-holder.eltdf-dropdown:hover .eltdf-social-share-dropdown ul li {
+  opacity: 1;
+  visibility: visible;
+  cursor: pointer;
+}
+
+.eltdf-social-share-holder.eltdf-dropdown:hover .eltdf-social-share-dropdown ul li {
+  /* opacity and visibility need to be different, but not background-color */
+}
+
+.eltdf-social-share-holder.eltdf-dropdown:hover .eltdf-social-share-dropdown ul li:nth-child(2) {
+  -webkit-transition: opacity 0.2s ease-out 0.2s, visibility 0.2s ease-out 0.2s, background-color 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out 0.2s, visibility 0.2s ease-out 0.2s, background-color 0.2s ease-out;
+  transition: opacity 0.2s ease-out 0.2s, visibility 0.2s ease-out 0.2s, background-color 0.2s ease-out;
+}
+
+.eltdf-social-share-holder.eltdf-dropdown:hover .eltdf-social-share-dropdown ul li:nth-child(3) {
+  -webkit-transition: opacity 0.2s ease-out 0.3s, visibility 0.2s ease-out 0.3s, background-color 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out 0.3s, visibility 0.2s ease-out 0.3s, background-color 0.2s ease-out;
+  transition: opacity 0.2s ease-out 0.3s, visibility 0.2s ease-out 0.3s, background-color 0.2s ease-out;
+}
+
+.eltdf-social-share-holder.eltdf-dropdown:hover .eltdf-social-share-dropdown ul li:nth-child(4) {
+  -webkit-transition: opacity 0.2s ease-out 0.4s, visibility 0.2s ease-out 0.4s, background-color 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out 0.4s, visibility 0.2s ease-out 0.4s, background-color 0.2s ease-out;
+  transition: opacity 0.2s ease-out 0.4s, visibility 0.2s ease-out 0.4s, background-color 0.2s ease-out;
+}
+
+.eltdf-social-share-holder.eltdf-dropdown:hover .eltdf-social-share-dropdown ul li:nth-child(5) {
+  -webkit-transition: opacity 0.2s ease-out 0.5s, visibility 0.2s ease-out 0.5s, background-color 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out 0.5s, visibility 0.2s ease-out 0.5s, background-color 0.2s ease-out;
+  transition: opacity 0.2s ease-out 0.5s, visibility 0.2s ease-out 0.5s, background-color 0.2s ease-out;
+}
+
+.eltdf-social-share-holder.eltdf-dropdown:hover .eltdf-social-share-dropdown ul li:nth-child(6) {
+  -webkit-transition: opacity 0.2s ease-out 0.6s, visibility 0.2s ease-out 0.6s, background-color 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out 0.6s, visibility 0.2s ease-out 0.6s, background-color 0.2s ease-out;
+  transition: opacity 0.2s ease-out 0.6s, visibility 0.2s ease-out 0.6s, background-color 0.2s ease-out;
+}
+
+.eltdf-social-share-holder.eltdf-dropdown:hover .eltdf-social-share-dropdown ul li:nth-child(7) {
+  -webkit-transition: opacity 0.2s ease-out 0.7s, visibility 0.2s ease-out 0.7s, background-color 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out 0.7s, visibility 0.2s ease-out 0.7s, background-color 0.2s ease-out;
+  transition: opacity 0.2s ease-out 0.7s, visibility 0.2s ease-out 0.7s, background-color 0.2s ease-out;
+}
+
+/* Dropdown type - end
+========================================================================== */
+/* ==========================================================================
+   Social Share shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Tabs shortcode style - begin
+   ========================================================================== */
+.eltdf-tabs {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.eltdf-tabs .eltdf-tabs-nav {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.eltdf-tabs .eltdf-tabs-nav li {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+.eltdf-tabs .eltdf-tabs-nav li .eltdf-tabs-title {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.eltdf-tabs .eltdf-tabs-nav li a {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  -webkit-transition: color 0.2s ease-out, background-color 0.2s ease-out, border-color 0.2s ease-out;
+  -moz-transition: color 0.2s ease-out, background-color 0.2s ease-out, border-color 0.2s ease-out;
+  transition: color 0.2s ease-out, background-color 0.2s ease-out, border-color 0.2s ease-out;
+}
+
+.eltdf-tabs .eltdf-tab-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.eltdf-tabs .eltdf-tab-container p {
+  margin: 0;
+}
+
+.eltdf-tabs.eltdf-tabs-standard .eltdf-tabs-nav li {
+  margin-right: 2px;
+}
+
+.eltdf-tabs.eltdf-tabs-standard .eltdf-tabs-nav li a {
+  padding: 22px 55px;
+  background-color: #f6f6f6;
+}
+
+.eltdf-tabs.eltdf-tabs-standard .eltdf-tabs-nav li a:hover {
+  color: #fff;
+}
+
+.eltdf-tabs.eltdf-tabs-standard .eltdf-tabs-nav li.ui-state-active a,
+.eltdf-tabs.eltdf-tabs-standard .eltdf-tabs-nav li.ui-state-hover a {
+  color: #fff;
+  background-color: #71cbfe;
+}
+
+.eltdf-tabs.eltdf-tabs-standard .eltdf-tabs-nav li:last-child {
+  margin-right: 0;
+}
+
+.eltdf-tabs.eltdf-tabs-standard .eltdf-tab-container {
+  margin: 31px 0 0;
+}
+
+.eltdf-tabs.eltdf-tabs-simple .eltdf-tabs-nav {
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.eltdf-tabs.eltdf-tabs-simple .eltdf-tabs-nav li {
+  margin: 0 31px 0 0;
+}
+
+.eltdf-tabs.eltdf-tabs-simple .eltdf-tabs-nav li a {
+  padding: 13px 0;
+  color: #999;
+}
+
+.eltdf-tabs.eltdf-tabs-simple .eltdf-tabs-nav li.ui-state-active a,
+.eltdf-tabs.eltdf-tabs-simple .eltdf-tabs-nav li.ui-state-hover a {
+  color: #333333;
+}
+
+.eltdf-tabs.eltdf-tabs-simple .eltdf-tabs-nav li:last-child {
+  margin: 0;
+}
+
+.eltdf-tabs.eltdf-tabs-simple .eltdf-tab-container {
+  padding: 31px 0;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.eltdf-tabs.eltdf-tabs-vertical .eltdf-tabs-nav {
+  display: table-cell;
+  vertical-align: top;
+  width: 205px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.eltdf-tabs.eltdf-tabs-vertical .eltdf-tabs-nav li {
+  display: block;
+  float: none;
+  margin: 0 0 3px;
+}
+
+.eltdf-tabs.eltdf-tabs-vertical .eltdf-tabs-nav li .eltdf-tabs-title {
+  width: 100%;
+}
+
+.eltdf-tabs.eltdf-tabs-vertical .eltdf-tabs-nav li a {
+  padding: 22px 24px;
+  background-color: #f6f6f6;
+  width: 100%;
+}
+
+.eltdf-tabs.eltdf-tabs-vertical .eltdf-tabs-nav li a:hover {
+  color: #fff;
+}
+
+.eltdf-tabs.eltdf-tabs-vertical .eltdf-tabs-nav li.ui-state-active a,
+.eltdf-tabs.eltdf-tabs-vertical .eltdf-tabs-nav li.ui-state-hover a {
+  color: #fff;
+  background-color: #71cbfe;
+}
+
+.eltdf-tabs.eltdf-tabs-vertical .eltdf-tabs-nav li:last-child {
+  margin: 0;
+}
+
+.eltdf-tabs.eltdf-tabs-vertical .eltdf-tab-container {
+  display: table-cell;
+  vertical-align: middle;
+  width: calc(100% - 205px);
+  height: 100%;
+  padding: 0 0 0 45px;
+  box-sizing: border-box;
+}
+
+/* ==========================================================================
+   Tabs shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Text Marquee shortcode style - begin
+   ========================================================================== */
+.eltdf-text-marquee {
+  position: relative;
+  white-space: nowrap;
+  line-height: 1em;
+}
+
+.eltdf-text-marquee .eltdf-marquee-element {
+  display: inline-block;
+  color: inherit;
+  font-size: inherit;
+  font-weight: 800;
+  box-sizing: border-box;
+  padding: 0 25px;
+}
+
+.eltdf-text-marquee .eltdf-marquee-element.eltdf-original-text {
+  position: relative;
+}
+
+.eltdf-text-marquee .eltdf-marquee-element.eltdf-aux-text {
+  position: absolute;
+  top: 0;
+}
+
+/* ==========================================================================
+   Text Marquee shortcode style - end
+   ========================================================================== */
+.eltdf-timeline-holder {
+  position: relative;
+  white-space: nowrap;
+  visibility: hidden;
+}
+
+.eltdf-timeline-holder .eltdf-timeline {
+  position: relative;
+}
+
+.eltdf-timeline-holder .eltdf-timeline.eltdf-timeline-clone {
+  position: absolute;
+  top: 0;
+}
+
+.eltdf-timeline-holder .eltdf-timeline-item {
+  display: inline-block;
+  width: 620px;
+  box-sizing: border-box;
+  white-space: normal;
+  pointer-events: none;
+}
+
+.eltdf-timeline-holder .eltdf-timeline-item.eltdf-active {
+  pointer-events: auto;
+}
+
+.eltdf-timeline-holder .eltdf-timeline-item .eltdf-timeline-text-holder {
+  margin-left: 50px;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.eltdf-timeline-holder .eltdf-timeline-item .eltdf-timeline-text-holder .eltdf-timeline-image {
+  float: left;
+  width: 95px;
+  height: 95px;
+}
+
+.eltdf-timeline-holder .eltdf-timeline-item .eltdf-timeline-text-holder .eltdf-timeline-image img {
+  border-radius: 50%;
+}
+
+.eltdf-timeline-holder .eltdf-timeline-item .eltdf-timeline-text-holder .eltdf-timeline-title-holder {
+  position: relative;
+  margin-left: 125px;
+  width: 50%;
+}
+
+.eltdf-timeline-holder .eltdf-timeline-item .eltdf-timeline-text-holder .eltdf-timeline-title-holder > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+}
+
+.eltdf-timeline-holder .eltdf-timeline-item .eltdf-timeline-text-holder .eltdf-timeline-title-holder .eltdf-timeline-title {
+  width: 80%;
+}
+
+.eltdf-timeline-holder .eltdf-timeline-item .eltdf-timeline-text-holder .eltdf-timeline-title-holder h3 {
+  margin-bottom: 14px;
+}
+
+.eltdf-timeline-holder .eltdf-timeline-item .eltdf-timeline-text-holder .eltdf-timeline-title-holder h5 {
+  margin-top: 12px;
+}
+
+.eltdf-timeline-holder .eltdf-timeline-item .eltdf-timeline-bottom-holder {
+  position: relative;
+  height: 230px;
+}
+
+.eltdf-timeline-holder .eltdf-timeline-item .eltdf-timeline-bottom-holder .eltdf-timeline-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 6px;
+  height: 0;
+  background-color: #f6f6f6;
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transform: scaleY(0);
+  -moz-transform: scaleY(0);
+  transform: scaleY(0);
+}
+
+.eltdf-timeline-holder .eltdf-timeline-item .eltdf-timeline-bottom-holder .eltdf-timeline-line.eltdf-long {
+  height: 220px;
+}
+
+.eltdf-timeline-holder .eltdf-timeline-item .eltdf-timeline-bottom-holder .eltdf-timeline-line.eltdf-short {
+  height: 110px;
+}
+
+.eltdf-timeline-holder .eltdf-timeline-item .eltdf-timeline-bottom-holder .eltdf-timeline-line .eltdf-line-bottom {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-color: inherit;
+  -webkit-transition: height 0.25s;
+  -moz-transition: height 0.25s;
+  transition: height 0.25s;
+}
+
+.eltdf-timeline-holder .eltdf-timeline-item .eltdf-timeline-bottom-holder .eltdf-timeline-line .eltdf-line-top {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -5px;
+  height: 16px;
+  width: 16px;
+  background-color: inherit;
+  border-radius: 50%;
+  background-color: inherit;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: -webkit-transform .3s .6s;
+  transition: transform .3s .6s;
+}
+
+.eltdf-timeline-holder .eltdf-timeline-item .eltdf-timeline-bottom-holder .eltdf-timeline-line:nth-child(2) {
+  left: 25%;
+}
+
+.eltdf-timeline-holder .eltdf-timeline-item .eltdf-timeline-bottom-holder .eltdf-timeline-line:nth-child(3) {
+  left: 50%;
+}
+
+.eltdf-timeline-holder .eltdf-timeline-item .eltdf-timeline-bottom-holder .eltdf-timeline-line:nth-child(4) {
+  left: 75%;
+}
+
+.eltdf-timeline-holder .eltdf-timeline-item .eltdf-timeline-bottom-holder .eltdf-timeline-line.eltdf-show {
+  -webkit-transition: all 0.4s ease 0.5s;
+  -moz-transition: all 0.4s ease 0.5s;
+  transition: all 0.4s ease 0.5s;
+  -webkit-transform: scaleY(1);
+  -moz-transform: scaleY(1);
+  transform: scaleY(1);
+}
+
+.eltdf-timeline-holder .eltdf-timeline-item .eltdf-timeline-bottom-holder .eltdf-timeline-line.eltdf-show .eltdf-line-top {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  transform: scale(1);
+}
+
+.eltdf-timeline-holder .eltdf-timeline-item .eltdf-timeline-bottom-holder .eltdf-timeline-line.eltdf-show.eltdf-shown {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.eltdf-timeline-holder .eltdf-timeline-item .eltdf-timeline-bottom-holder .eltdf-timeline-line.eltdf-show.eltdf-shown .eltdf-line-top {
+  -webkit-transition: -webkit-transform .25s .1s;
+  transition: transform .25s .1s;
+}
+
+.eltdf-timeline-holder .eltdf-timeline-item .eltdf-timeline-bottom-holder .eltdf-timeline-line.eltdf-show.eltdf-shown .eltdf-line-bottom {
+  -webkit-transition: height 0.25s 0.1s;
+  -moz-transition: height 0.25s 0.1s;
+  transition: height 0.25s 0.1s;
+}
+
+.eltdf-timeline-holder .eltdf-timeline-item .eltdf-timeline-bottom-holder .eltdf-timeline-line.eltdf-hide {
+  -webkit-transform: scaleY(0);
+  -moz-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transition: height 0s 0.1s;
+  -moz-transition: height 0s 0.1s;
+  transition: height 0s 0.1s;
+}
+
+.eltdf-timeline-holder .eltdf-timeline-item.eltdf-link-hovered .eltdf-timeline-text-holder {
+  -webkit-transition: all 0.5s cubic-bezier(0.25, 0.1, 0.14, 1.6);
+  -moz-transition: all 0.5s cubic-bezier(0.25, 0.1, 0.14, 1.6);
+  transition: all 0.5s cubic-bezier(0.25, 0.1, 0.14, 1.6);
+  -webkit-transform: translateY(-30px);
+  -moz-transform: translateY(-30px);
+  transform: translateY(-30px);
+}
+
+.eltdf-timeline-holder .eltdf-timeline-item.eltdf-link-hovered .eltdf-timeline-line.eltdf-colored {
+  background-color: #71cbfe;
+}
+
+.eltdf-timeline-holder .eltdf-timeline-item.eltdf-link-hovered .eltdf-timeline-line.eltdf-colored .eltdf-line-bottom {
+  height: calc(100% + 30px);
+}
+
+.eltdf-timeline-holder .eltdf-timeline-item.eltdf-link-hovered .eltdf-timeline-line.eltdf-colored .eltdf-line-top {
+  -webkit-transform: translateY(-30px) scale(1.2);
+  -moz-transform: translateY(-30px) scale(1.2);
+  transform: translateY(-30px) scale(1.2);
+}
+
+.eltdf-timeline-holder:after {
+  content: '';
+  height: 25px;
+  background-color: #f6f6f6;
+  width: 100%;
+  position: absolute;
+  bottom: -16px;
+  left: 0;
+}
+
+.eltdf-timeline-holder.eltdf-timeline-light .eltdf-timeline-item .eltdf-timeline-title-holder h3,
+.eltdf-timeline-holder.eltdf-timeline-light .eltdf-timeline-item .eltdf-timeline-subtitle,
+.eltdf-timeline-holder.eltdf-timeline-light .eltdf-timeline-item .eltdf-timeline-date h5 {
+  color: #fff;
+}
+
+.eltdf-timeline-holder.eltdf-timeline-light .eltdf-timeline-item .eltdf-timeline-line {
+  background-color: #fff;
+}
+
+.eltdf-timeline-holder.eltdf-timeline-light:after {
+  background-color: #fff;
+}
+
+/* ==========================================================================
+   Vertical Split Slider shortcode style - begin
+   ========================================================================== */
+.eltdf-vss-initialized .eltdf-content .eltdf-content-inner > .eltdf-container > .eltdf-container-inner {
+  padding: 0;
+}
+
+.eltdf-vss-initialized .eltdf-content .eltdf-content-inner > .eltdf-full-width > .eltdf-full-width-inner {
+  padding: 0;
+}
+
+.eltdf-vertical-split-slider {
+  position: relative;
+  opacity: 0;
+  margin: 0 -2px;
+  overflow: hidden;
+}
+
+.eltdf-vertical-split-slider .eltdf-vss-ms-left,
+.eltdf-vertical-split-slider .eltdf-vss-ms-right {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+}
+
+.eltdf-vertical-split-slider .eltdf-vss-ms-left {
+  top: 0;
+  left: 0;
+}
+
+.eltdf-vertical-split-slider .eltdf-vss-ms-left .eltdf-vss-ms-section {
+  background-position: 100% center;
+  background-size: cover;
+}
+
+.eltdf-vertical-split-slider .eltdf-vss-ms-right {
+  top: 10000px;
+  right: 0;
+}
+
+.eltdf-vertical-split-slider .eltdf-vss-ms-right .eltdf-vss-ms-section {
+  background-position: 0 center;
+  background-size: cover;
+}
+
+.eltdf-vertical-split-slider .eltdf-vss-ms-section.ms-table {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  box-sizing: border-box;
+}
+
+.eltdf-vertical-split-slider .eltdf-vss-ms-section .ms-tableCell {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.eltdf-vertical-split-slider .eltdf-vss-ms-section .ms-easing {
+  -webkit-transition: all 0.7s ease-out;
+  -moz-transition: all 0.7s ease-out;
+  transition: all 0.7s ease-out;
+}
+
+.eltdf-vss-responsive {
+  display: none;
+}
+
+.eltdf-vss-responsive .eltdf-vss-ms-section {
+  background-position: center;
+  background-size: cover;
+}
+
+#multiscroll-nav {
+  position: fixed;
+  top: 50%;
+  right: 64px;
+  margin-top: -10px;
+  opacity: 1;
+  z-index: 1000;
+  -webkit-transition: opacity 0.5s ease-out;
+  -moz-transition: opacity 0.5s ease-out;
+  transition: opacity 0.5s ease-out;
+}
+
+#multiscroll-nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+#multiscroll-nav ul li {
+  position: relative;
+  display: block;
+  margin: 12px 3px;
+  overflow: hidden;
+}
+
+#multiscroll-nav ul li a {
+  position: relative;
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin: 0 auto;
+  background-color: transparent;
+  border: 2px solid rgba(51, 51, 51, 0.5);
+  border-radius: 3em;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+#multiscroll-nav ul li a.active {
+  background-color: #333333;
+  border-color: #333333;
+}
+
+.eltdf-light-header #multiscroll-nav ul li a {
+  border-color: #fff;
+}
+
+.eltdf-light-header #multiscroll-nav ul li a.active {
+  background-color: #fff;
+}
+
+.eltdf-dark-header #multiscroll-nav ul li a {
+  border-color: #333;
+}
+
+.eltdf-dark-header #multiscroll-nav ul li a.active {
+  background-color: #333;
+}
+
+#multiscroll-nav ul li a span {
+  display: block;
+}
+
+/* ==========================================================================
+   Vertical Split Slider shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Video Button shortcode start styles
+   ========================================================================== */
+.eltdf-video-button-holder {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  min-width: 92px;
+  min-height: 92px;
+}
+
+.eltdf-video-button-holder .eltdf-video-button-image {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.eltdf-video-button-holder .eltdf-video-button-image img {
+  display: block;
+}
+
+.eltdf-video-button-holder .eltdf-video-button-play,
+.eltdf-video-button-holder .eltdf-video-button-play-image {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.eltdf-video-button-holder .eltdf-video-button-play .eltdf-video-button-play-inner,
+.eltdf-video-button-holder .eltdf-video-button-play-image .eltdf-video-button-play-inner {
+  position: relative;
+  top: 50%;
+  left: 0;
+  display: block;
+  text-align: center;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.eltdf-video-button-holder .eltdf-video-button-play .eltdf-video-button-play-holder,
+.eltdf-video-button-holder .eltdf-video-button-play-image .eltdf-video-button-play-holder {
+  position: relative;
+  top: 50%;
+  left: 0;
+  display: block;
+  margin: auto;
+  text-align: center;
+  color: #333333;
+  background-color: #eef9ff;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  width: 92px;
+  height: 92px;
+  box-sizing: border-box;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: all 0.25s cubic-bezier(0.38, 1.6, 0.57, 1.6);
+  -moz-transition: all 0.25s cubic-bezier(0.38, 1.6, 0.57, 1.6);
+  transition: all 0.25s cubic-bezier(0.38, 1.6, 0.57, 1.6);
+}
+
+.eltdf-video-button-holder .eltdf-video-button-play .eltdf-vb-arrow,
+.eltdf-video-button-holder .eltdf-video-button-play-image .eltdf-vb-arrow {
+  position: absolute;
+  top: calc(50% - 14px);
+  left: calc(50% - 9px);
+  z-index: 30;
+  border-top: 14px solid transparent;
+  border-bottom: 14px solid transparent;
+  border-left: 24px solid currentColor;
+}
+
+.eltdf-video-button-holder .eltdf-video-button-play {
+  color: #333333;
+  font-size: 92px;
+  line-height: 1;
+}
+
+.eltdf-video-button-holder .eltdf-video-button-play span {
+  display: block;
+  line-height: inherit;
+}
+
+.eltdf-video-button-holder .eltdf-video-button-play span:before {
+  display: block;
+  line-height: inherit;
+}
+
+.eltdf-video-button-holder .eltdf-video-button-play:hover .eltdf-video-button-play-holder {
+  -webkit-transform: translateY(-50%) scale(1.1);
+  -moz-transform: translateY(-50%) scale(1.1);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.eltdf-video-button-holder .eltdf-video-button-play-image.eltdf-vb-has-hover-image:hover img:first-child {
+  opacity: 0;
+}
+
+.eltdf-video-button-holder .eltdf-video-button-play-image.eltdf-vb-has-hover-image:hover img:nth-child(2) {
+  opacity: 1;
+}
+
+.eltdf-video-button-holder .eltdf-video-button-play-image img {
+  display: block;
+  margin: 0 auto;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.eltdf-video-button-holder .eltdf-video-button-play-image img:first-child {
+  position: relative;
+  opacity: 1;
+}
+
+.eltdf-video-button-holder .eltdf-video-button-play-image img:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translateX(-50%) translateZ(0);
+  -moz-transform: translateX(-50%) translateZ(0);
+  transform: translateX(-50%) translateZ(0);
+}
+
+.rev_slider_wrapper .eltdf-video-button-holder .eltdf-video-button-play-image img:nth-child(2) {
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+/* ==========================================================================
+   Video Button shortcode end styles
+   ========================================================================== */
+
+/*# sourceMappingURL=../../../../plugins/eltdf-core/assets/css/shortcodes.css.map */

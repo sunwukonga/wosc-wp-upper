@@ -1,0 +1,138 @@
+/* ==========================================================================
+   Portfolio Slider shortcode style - begin
+   ========================================================================== */
+
+.eltdf-portfolio-slider-holder {
+    @include eltdfRelativeHolderLayout();
+
+	.eltdf-pl-inner {
+		margin: 0 !important;
+	}
+	
+	article {
+		width: auto !important;
+		padding: 0 !important;
+		margin: 0 !important;
+		float: none !important;
+	}
+
+	.eltdf-portfolio-list-holder {
+
+		&.eltdf-nav-light-skin {
+
+			.owl-nav {
+
+				.owl-prev,
+				.owl-next {
+
+					&:hover {
+
+						.eltdf-prev-icon,
+						.eltdf-next-icon {
+							color: $header-light-hover-color;
+						}
+					}
+				}
+
+				.eltdf-prev-icon,
+				.eltdf-next-icon {
+					color: $header-light-color;
+				}
+			}
+		}
+
+		&.eltdf-nav-dark-skin {
+
+			.owl-nav {
+
+				.owl-prev,
+				.owl-next {
+
+					&:hover {
+
+						.eltdf-prev-icon,
+						.eltdf-next-icon {
+							color: $header-dark-hover-color;
+						}
+					}
+				}
+
+				.eltdf-prev-icon,
+				.eltdf-next-icon {
+					color: $header-dark-color;
+				}
+			}
+		}
+
+		&.eltdf-pag-light-skin {
+
+			.owl-dots {
+
+				.owl-dot {
+
+					span {
+						background-color: rgba($header-light-color, .2);
+					}
+
+					&.active,
+					&:hover {
+
+						span {
+							background-color: $header-light-hover-color;
+						}
+					}
+				}
+			}
+		}
+
+		&.eltdf-pag-dark-skin {
+
+			.owl-dots {
+
+				.owl-dot {
+
+					span {
+						background-color: rgba($header-dark-color, .2);
+					}
+
+					&.active,
+					&:hover {
+
+						span {
+							background-color: $header-dark-hover-color;
+						}
+					}
+				}
+			}
+		}
+
+		&.eltdf-pag-on-slider {
+
+			.owl-nav {
+
+				.owl-prev,
+				.owl-next {
+					@include eltdfTransform(translateY(-50%));
+				}
+			}
+
+			.owl-dots {
+				position: absolute;
+				left: 0;
+				bottom: 20px;
+				width: 100%;
+				margin: 0;
+			}
+		}
+
+		&.eltdf-pl-three-columns,
+		&.eltdf-pl-six-columns{
+			.eltdf-owl-slider{
+				width: calc(100% - 1px); //because of the calculating of 33.33% width by owl carousel and Chrome combined
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Portfolio Slider shortcode style - end
+   ========================================================================== */

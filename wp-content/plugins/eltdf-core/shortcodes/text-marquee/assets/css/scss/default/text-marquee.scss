@@ -1,0 +1,31 @@
+/* ==========================================================================
+   Text Marquee shortcode style - begin
+   ========================================================================== */
+
+.eltdf-text-marquee {
+	position: relative;
+	white-space: nowrap;
+	line-height: 1em;
+
+	.eltdf-marquee-element {
+		display: inline-block;
+		color:inherit;
+		font-size:inherit;
+		font-weight: 800;
+		box-sizing: border-box;
+		padding:0 25px;
+
+		&.eltdf-original-text {
+			position: relative;
+		}
+
+		&.eltdf-aux-text {
+			position: absolute;
+			top: 0;
+		}
+	}
+}
+
+/* ==========================================================================
+   Text Marquee shortcode style - end
+   ========================================================================== */

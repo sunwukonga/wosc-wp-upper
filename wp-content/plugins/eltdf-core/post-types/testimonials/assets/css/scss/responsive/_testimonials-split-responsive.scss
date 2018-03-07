@@ -1,0 +1,55 @@
+/* ==========================================================================
+   Testimonials split style - begin
+   ========================================================================== */
+.eltdf-testimonials-holder.eltdf-testimonials-split {
+
+	@include laptop-landscape-medium{
+        .eltdf-testimonial-text {
+			font-size: 2.5vw;
+		}
+	}
+
+	@include ipad-landscape{
+        .eltdf-testimonial-text {
+			font-size: 2.5vw;
+		}
+		.eltdf-testimonials-content-holder-outer {
+			width: 60%;
+			
+			.eltdf-testimonials-content-holder {
+				width: 100%;
+			}
+		}
+
+		.owl-dots {
+			display: none;
+		}
+	}
+
+	@include phone-landscape{
+		.eltdf-testimonials-images-holder {
+		    position: absolute;
+		    top: 0;
+		    bottom: 0;
+		    width: 100%;
+
+		    .owl-stage-outer {
+		    	display: none;
+		    }
+		}
+		.eltdf-testimonials-content-holder-outer {
+			position: relative;
+			box-sizing: border-box;
+			padding: 20px;
+			width: 100%;
+		}
+
+		.eltdf-testimonial-text {
+			font-size: 20px;
+		}
+	}
+}
+/* ==========================================================================
+   Testimonials split style - end
+   ========================================================================== */
+

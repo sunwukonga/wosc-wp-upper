@@ -1,0 +1,93 @@
+/* ==========================================================================
+   Progress Bar shortcode style - begin
+   ========================================================================== */
+
+.eltdf-progress-bar {
+    @include eltdfRelativeHolderLayout();
+    
+    .eltdf-pb-title-holder {
+        position: relative;
+        text-align: left;
+        margin: 10px 0 13px;
+        
+        .eltdf-pb-title {
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            z-index: 100;
+        }
+    }
+	
+    .eltdf-pb-percent {
+        position: absolute;
+        left: 0;
+        bottom: 1px;
+        width: auto;
+	    display: inline-block;
+	    vertical-align: middle;
+	    opacity: 0;
+	    z-index: 10;
+        font-size: 30px;
+        @include eltdfTransform(translateX(-50%));
+        
+        &:after {
+            content: '%';
+            font-size: 15px;
+            top: -7px;
+            position: relative;
+        }
+    }
+    
+    .eltdf-pb-content-holder {
+        position: relative;
+        height: 20px;
+        overflow: hidden;
+        background-color: #f6f6f6;
+        
+        .eltdf-pb-content {
+            height: 20px;
+            max-width: 100%;
+            overflow: hidden;
+            background-color: $first-main-color;
+        }
+    }
+
+    &.eltdf-progress-vertical{
+        width: 130px;
+        max-width: 100%;
+        margin-right:30px;
+
+        &:last-child{
+        	margin-right: 0;
+        }
+
+        .eltdf-pb-content-holder{
+            height: 200px;
+
+            .eltdf-pb-content{
+                width: 130px;
+                position: absolute;
+                bottom: 0;
+            }
+
+        }
+
+        .eltdf-pb-title-holder{
+            margin-top: 30px;
+        }
+
+        .eltdf-pb-percent{
+	        font-size: 23px;
+        }
+
+        .eltdf-pb-percent,
+        .eltdf-pb-title{
+            position: relative;
+            display: block;
+        	@include eltdfTransform(none);
+        }
+    }
+}
+/* ==========================================================================
+   Progress Bar shortcode style - end
+   ========================================================================== */

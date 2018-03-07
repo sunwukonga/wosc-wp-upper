@@ -1,0 +1,45 @@
+/* ==========================================================================
+# Team responsive style - begin
+========================================================================== */
+
+@include ipad-landscape {
+	
+	.eltdf-team {
+		
+		&.info-bellow {
+			
+			.eltdf-team-image {
+				width: 100%;
+			}
+		}
+	}
+}
+
+@include ipad-portrait{
+	.eltdf-team-modal-holder {
+		.eltdf-team-popup-content{
+			width: auto;
+		}
+	}
+}
+
+@include phone-landscape{
+	.eltdf-team-modal-holder{
+		.eltdf-team-title-holder{
+			.eltdf-team-name,
+			.eltdf-team-popup-social{
+				display: block;
+				text-align: left;
+			}
+
+			.eltdf-team-popup-social{
+				margin-top: 10px;
+			}
+
+		}
+	}
+}
+
+/* ==========================================================================
+# Team responsive style - end
+========================================================================== */

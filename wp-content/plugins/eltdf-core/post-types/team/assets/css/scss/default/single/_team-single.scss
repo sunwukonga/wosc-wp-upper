@@ -1,0 +1,84 @@
+.eltdf-team-single-holder {
+    @include eltdfRelativeHolderLayout();
+    margin-bottom: 100px;
+
+    .eltdf-ts-image-holder img{
+    	display: block;
+    }
+	
+    .eltdf-name {
+        margin: 0 0 5px;
+    }
+
+    .eltdf-position {
+    	display: inline-block;
+    	vertical-align: middle;
+        color: #ababab;
+        font-weight: 600;
+	    margin: 0 0 25px;
+    }
+
+    .eltdf-ts-info-row {
+	    padding: 10px 0;
+	    color: #ababab;
+	    font-size: 16px;
+
+        &:last-child{
+            border: 0;
+        }
+
+        .eltdf-ts-bio-icon {
+	        display: inline-block;
+	        vertical-align: middle;
+	        margin: 0 10px 0 0;
+	        color: #333;
+	        font-size: 18px;
+        }
+
+        .eltdf-ts-bio-info-title{
+        	color: #333;
+        	font-weight: 600;
+        }
+
+        .eltdf-ts-bio-info {
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+
+    .eltdf-team-social{
+    	margin-top: 20px;
+    }
+
+    .eltdf-icon-shortcode {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+
+        &:last-child{
+        	margin: 0;
+        }
+
+        a{
+        	color: #333;
+
+        	&:hover{
+        		color: $first-main-color;
+        	}
+        }
+
+        span, i {
+            color: inherit;
+        }
+    }
+
+    .eltdf-team-single-content {
+	    @include eltdfRelativeHolderLayout();
+	    margin: 0 0 30px;
+
+	    .eltdf-team-single-content-title{
+	    	margin: 0;
+	    }
+    }
+}

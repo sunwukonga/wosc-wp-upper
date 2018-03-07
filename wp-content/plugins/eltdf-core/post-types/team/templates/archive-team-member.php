@@ -1,0 +1,17 @@
+<?php
+get_header();
+mrseo_elated_get_title(); ?>
+<div class="eltdf-container eltdf-default-page-template">
+	<?php do_action('mrseo_elated_after_container_open'); ?>
+	<div class="eltdf-container-inner clearfix">
+		<?php
+			$eltdf_taxonomy_id = get_queried_object_id();
+			$eltdf_taxonomy = !empty($eltdf_taxonomy_id) ? get_category($eltdf_taxonomy_id) : '';
+			$eltdf_taxonomy_slug = !empty($eltdf_taxonomy) ? $eltdf_taxonomy->slug : '';
+		
+			eltdf_core_get_team_category_list($eltdf_taxonomy_slug);
+		?>
+	</div>
+	<?php do_action('mrseo_elated_before_container_close'); ?>
+</div>
+<?php get_footer(); ?>

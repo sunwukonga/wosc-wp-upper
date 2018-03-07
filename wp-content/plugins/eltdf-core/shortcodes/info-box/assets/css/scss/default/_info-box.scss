@@ -1,0 +1,110 @@
+/* ==========================================================================
+   Info Box shortcode style - begin
+   ========================================================================== */
+.eltdf-info-box-holder{
+   	position: relative;
+   	z-index: 0;
+
+   	> a {
+   		@include eltdfAbsoluteHolderLayout();
+   		z-index:100;
+   	}
+
+	&.eltdf-hovered {
+		.eltdf-ib-color-holder{
+			@include eltdfTransform(scale(1.1));
+			@include eltdfTransition(all .35s cubic-bezier(.38,1.3,.57,1.3) .1s);
+		}
+
+		.eltdf-ib-icon{
+			opacity: 1;
+		}
+	}
+
+	.eltdf-ib-color-holder{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		@include eltdfTransition(all .2s);
+	}
+
+	.eltdf-ib-bckg-image-holder{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-position: center;
+		background-size: cover;
+	}
+
+	.eltdf-ib-holder-table{
+		position: relative;
+		display: table;
+		height: 100%;
+		width: 100%;
+		z-index: 10;
+	}
+
+	.eltdf-ib-holder-table-cell{
+		display: table-cell;
+		vertical-align: middle;
+		text-align: left;
+		padding: 110px 60px 130px;
+	}
+
+	.eltdf-ib-holder-inner{
+		text-align: left;
+
+		.eltdf-ib-icon{
+			opacity: 0;
+			@include eltdfTransition(opacity .1s ease-in-out);
+		}
+	}
+
+   	.eltdf-ib-icon{
+   		color: $first-main-color;
+   		font-size: 20px;
+   		margin-top: 10px;
+   	}
+
+   	.eltdf-ib-title {
+
+   		.eltdf-section-ital {
+   			font-weight: 400;
+   			font-style: italic;
+   		}
+
+   	}
+
+   	&.eltdf-ib-dark{
+
+   		.eltdf-ib-color-holder{
+   			background-color: $shortcode-background-color;
+   		}
+
+   		.eltdf-ib-text{
+   			color:$default-text-color;
+   		}
+
+   	}
+
+   	&.eltdf-ib-light{
+
+   		.eltdf-ib-color-holder{
+   			background-color: $first-main-color;
+   		}
+
+   		.eltdf-ib-title,
+   		.eltdf-ib-text,
+   		.eltdf-ib-icon,
+   		.eltdf-btn{
+   			color:$light-skin-color;
+   		}
+   	}
+}
+/* ==========================================================================
+   Info Box shortcode style - end
+   ========================================================================== */

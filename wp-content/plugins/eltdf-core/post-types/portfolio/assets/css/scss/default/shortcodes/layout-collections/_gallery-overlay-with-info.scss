@@ -1,0 +1,86 @@
+.eltdf-portfolio-list-holder {
+
+    &.eltdf-pl-gallery-overlay-with-info{
+
+        article{
+            .eltdf-pli-text-holder{
+                position: absolute;
+                opacity: 0;
+                top: 0;
+                left: 0;
+                background-color: #333;
+                display: block;
+                height: 100%;
+                @include eltdfTransition(opacity .3s);
+
+                .eltdf-pli-text-wrapper-inner{
+                	position: absolute;
+                	top: 5%;
+                	left: 5%;
+                    height: 90%;
+                    width: 90%;
+                }
+
+                .eltdf-pli-content{
+                	display: inline-block;
+                	vertical-align: top;
+                	margin-left: 18px;
+                    max-width: 80%;
+                }
+
+                .eltdf-pli-separator {
+                    display: inline-block;
+                	position: relative;
+                	top: 6px;
+                    width: 3px;
+                    height: 21px;
+                    background-color: $light-skin-color;
+                    -webkit-transform-origin: 50% 0;
+                    transform-origin: 50% 0;
+                    @include eltdfTransform(scaleY(0));
+                    -webkit-transition: -webkit-transform .0s .3s;
+                    transition: transform .0s .3s;
+                }
+
+                .eltdf-pli-title,
+                .eltdf-pli-category{
+                    color: $light-skin-color;
+                    @include eltdfTransform(translateY(40px));
+                    -webkit-transition: -webkit-transform .0s .3s;
+                    transition: transform .0s .3s;
+                }
+
+                .eltdf-pli-title{
+                    line-height: 27px;
+                }
+            }
+
+            .eltdf-pli-image {
+                overflow: hidden;
+
+                img {
+                    @include eltdfTransform(scale(1.01)); //white space fix
+                }
+            }
+
+            &:hover{
+                .eltdf-pli-text-holder{
+                    opacity: 1;
+
+                    .eltdf-pli-title,
+                    .eltdf-pli-category { 
+                        @include eltdfTransform(translateY(0));
+                        -webkit-transition: -webkit-transform .45s cubic-bezier(.38,1,.57,1.16);
+                        transition: transform .45s cubic-bezier(.38,1,.57,1.16);
+                    }
+
+                    .eltdf-pli-separator {
+                        @include eltdfTransform(scaleY(1));
+                        -webkit-transition: -webkit-transform .45s cubic-bezier(.38,1,.57,1);
+                        transition: transform .45s cubic-bezier(.38,1,.57,1);
+                    }
+                }
+            }
+        }
+    }
+}
